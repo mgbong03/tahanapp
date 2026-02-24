@@ -299,20 +299,7 @@ public class AssessmentViewActivity extends TahanAppActivity {
                 if (assessment.getComments() != null && !assessment.getComments().isBlank())
                     setHTMLContent(view, "observations", assessment.getComments());
 
-                PrintManager printManager = (PrintManager) getSystemService(Context.PRINT_SERVICE);
-                PrintDocumentAdapter printAdapter = webView.createPrintDocumentAdapter("rFLACC_PDF_" + assessmentTimestamp.getTime());
-                PrintAttributes attributes = new PrintAttributes.Builder()
-                        .setMediaSize(PrintAttributes.MediaSize.ISO_A4)
-                        .setResolution(new PrintAttributes.Resolution("high_res", "print_service", 600, 600))
-                        .setMinMargins(PrintAttributes.Margins.NO_MARGINS)
-                        .build();
-
-                String jobName = getExternalFilesDir(null) + "/rFLACC_PDF_" + assessmentTimestamp.getTime() + ".pdf";
-                printManager.print(
-                        jobName,
-                        printAdapter,
-                        attributes
-                );
+                launchPrintForm(webView, assessmentTimestamp);
             }
         });
     }
@@ -326,6 +313,23 @@ public class AssessmentViewActivity extends TahanAppActivity {
                 "})()";
 
         webView.evaluateJavascript(js, value -> {});
+    }
+
+    private void launchPrintForm(WebView webView, Date assessmentTimestamp) {
+        PrintManager printManager = (PrintManager) originalContext.getSystemService(Context.PRINT_SERVICE);
+        PrintDocumentAdapter printAdapter = webView.createPrintDocumentAdapter("rFLACC_PDF_" + assessmentTimestamp.getTime());
+        PrintAttributes attributes = new PrintAttributes.Builder()
+                .setMediaSize(PrintAttributes.MediaSize.ISO_A4)
+                .setResolution(new PrintAttributes.Resolution("high_res", "print_service", 600, 600))
+                .setMinMargins(PrintAttributes.Margins.NO_MARGINS)
+                .build();
+
+        String jobName = getExternalFilesDir(null) + "/rFLACC_PDF_" + assessmentTimestamp.getTime() + ".pdf";
+        printManager.print(
+                jobName,
+                printAdapter,
+                attributes
+        );
     }
 
     @Override
