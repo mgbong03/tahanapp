@@ -2,6 +2,7 @@ package me.kaylunasa.tahanapp.adapter;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.text.format.DateUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -56,10 +57,12 @@ public class ChildProfileCardAdapter extends RecyclerView.Adapter<ChildProfileCa
             lastAssessmentDate = assessment.getTimestamp();
         String lastAssessmentStr = holder.itemView.getContext().getResources().getText(R.string.never_assessed).toString();
         if (lastAssessmentDate != null) {
-            @SuppressLint("SimpleDateFormat") SimpleDateFormat sdf = new SimpleDateFormat("MMMM d, yyyy - hh:mm a");
-            lastAssessmentStr = sdf.format(lastAssessmentDate);
+            lastAssessmentStr = DateUtils.getRelativeTimeSpanString(
+                    lastAssessmentDate.getTime(),
+                    System.currentTimeMillis(),
+                    DateUtils.SECOND_IN_MILLIS
+            ).toString();
         }
-
 
         holder.lastAssessmentDisplay.setText(String.format(
                 holder.itemView.getContext().getResources().getText(R.string.last_assessment_format).toString(),

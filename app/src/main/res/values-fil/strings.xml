@@ -253,5 +253,6 @@
     <string name="assessment_not_exists">Hindi nag-eexist ang assessment na ito.</string>
     <string name="print">I-Print</string>
     <string name="pain_trends">Pain Trends (Nakaraang 7 Araw)</string>
+    <string name="last_assessment_format">Huling Assessment: %1$s</string>
     <string name="never_assessed">Hindi pa</string>
 </resources>
