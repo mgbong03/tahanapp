@@ -305,6 +305,6 @@
     <string name="print">Print</string>
     <string name="print_started" translatable="false">Printing r-FLACC form...</string>
     <string name="pain_trends">Pain Trends (Past 7 Days)</string>
-    <string name="last_assessment_format">Last Assessed: %1$s</string>
+    <string name="last_assessment_format" translatable="false">%1$s</string>
     <string name="never_assessed">Never</string>
 </resources>

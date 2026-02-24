@@ -42,6 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 tools:text="N years old"
+                android:layout_marginBottom="2sp"
                 android:textSize="13sp"
                 android:textColor="@color/darkgray"
                 android:fontFamily="@font/frutiger_light"/>
@@ -49,10 +50,13 @@
                 android:id="@+id/lastAssessment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:text="Last Assessment: %1$s"
+                android:drawablePadding="10sp"
+                android:text="@string/last_assessment_format"
+                android:gravity="center_vertical"
                 android:textSize="13sp"
                 android:textColor="@color/darkgray"
-                android:fontFamily="@font/frutiger_light"/>
+                android:fontFamily="@font/frutiger_light"
+                app:drawableStartCompat="@drawable/outline_calendar_clock_16" />
         </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>
