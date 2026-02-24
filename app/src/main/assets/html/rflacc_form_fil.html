@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fil">
+    <head>
+        <style>
+            body {
+                padding: 6px 24px;
+            }
+
+            .center {
+                text-align: center;
+            }
+            table {
+                width: 100%;
+            }
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                vertical-align: top;
+            }
+            th {
+                text-align: left;
+            }
+            td {
+                text-align: justify;
+            }
+            th, td {
+                padding: 2px 6px;
+            }
+
+            .bordered {
+                border: 1px solid black;
+                padding: 5px 10px;
+            }
+            .bordered > p {
+                box-sizing: border-box;
+                display: inline-block;
+            }
+        </style>
+        <title>r-FLACC Assessment Record</title>
+    </head>
+    <body>
+        <h2 class="center">TahanApp r-FLACC Assessment Record</h2>
+        <table>
+            <tr>
+                <th style="width: 30%">Petsa at Oras ng Assessment</th>
+                <td style="width: 70%" id="assessmentDateTime">N/A</td>
+            </tr>
+            <tr>
+                <th style="width: 30%">Pangalan ng Bata</th>
+                <td style="width: 70%" id="nameOfChild">N/A</td>
+            </tr>
+            <tr>
+                <th style="width: 30%">Edad ng Bata</th>
+                <td style="width: 70%" id="ageOfChild">N/A</td>
+            </tr>
+            <tr>
+                <th style="width: 30%">Kasarian ng Bata</th>
+                <td style="width: 70%" id="genderOfChild">N/A</td>
+            </tr>
+            <tr>
+                <th style="width: 30%">Diagnosis ng Bata</th>
+                <td style="width: 70%" id="diagnosisOfChild">N/A</td>
+            </tr>
+        </table>
+        <br />
+        <table>
+            <tr>
+                <th style="width: 5%"></th>
+                <th style="width: 30%">0</th>
+                <th style="width: 30%">1</th>
+                <th style="width: 30%">2</th>
+                <th style="width: 5%">Resulta</th>
+            </tr>
+            <tr>
+                <th style="width: 5%">Mukha (Face)</th>
+                <td style="width: 30%">Walang nababakas/ekspresyon na ngiti o kasiyahan</td>
+                <td style="width: 30%">Paminsan-minsan na pagngiwi o pagsimangot, umiiwas, walang pakialam, at mukhang malungkot o kaya’y nag-aalala</td>
+                <td style="width: 30%">Madalas hanggang sa palaging pagsimangot, nakakuyom na panga, nanginginig na baba, <i>mukhang nababagabag at may ekspresyon ng takot o pagkataranta</i></td>
+                <td style="width: 5%" id="faceResult">0</td>
+            </tr>
+            <tr>
+                <th style="width: 5%">Binti (Legs)</th>
+                <td style="width: 30%">Normal na posisyon/nakakarelaks; karaniwang kondisyon ng kalamnan at paggalaw ng mga braso at binti</td>
+                <td style="width: 30%">Hindi mapakali, tensyonado, at paminsan-minsang panginginig</td>
+                <td style="width: 30%">Pagsipa o paghila ng mga binti, <i>kapansin-pansing paninigas ng mga kalamnan at patuloy na panginginig at pagkagulat</i></td>
+                <td style="width: 5%" id="legsResult">0</td>
+            </tr>
+            <tr>
+                <th style="width: 5%">Aktibiti (Activity)</th>
+                <td style="width: 30%">Tahimik na nakahiga, normal na posisyon, madaling gumalaw; regular na ritmikong paghinga (respirasyon)</td>
+                <td style="width: 30%">Pamimilipit, paggalaw nang pabalik-balik, tensyonado o maingat na paggalaw; bahagyang balisa (pagbaling-baling ng ulo o agresyon); mababaw at siksik na paghinga; paminsan-minsang pagbuntong-hininga</td>
+                <td style="width: 30%">Pag-arko ng katawan, paninigas o biglaang pag-uga; <i>matinding pagkabalisa; pag-untog ng ulo; panginginig (hindi dahil sa lagnat), pagpigil ng hininga o biglaang paghingal; matinding paninigas ng kalamnan</i></td>
+                <td style="width: 5%" id="activityResult">0</td>
+            </tr>
+            <tr>
+                <th style="width: 5%">Pag-iyak (Cry)</th>
+                <td style="width: 30%">Walang pag-iyak (gising man o tulog)</td>
+                <td style="width: 30%">Mga ungol o hikbi, paminsan-minsang reklamo, sigaw, at pag-ungol </td>
+                <td style="width: 30%">Patuloy na pag-iyak, pagsigaw o paghikbi, madalas na mga reklamo; <i>paulit-ulit na pag-ungol at pagkagalit</i></td>
+                <td style="width: 5%" id="cryResult">0</td>
+            </tr>
+            <tr>
+                <th style="width: 5%">Nabibigyang-aliw/Kapanatagan (Consolability)</th>
+                <td style="width: 30%">Panatag/Kalmado</td>
+                <td style="width: 30%">Napapanatag ang loob sa pamamagitan ng paminsan-minsang paghawak, pagyakap o pakikipag-usap, o maaaring pagkagambala </td>
+                <td style="width: 30%">Mahirap aliwin; <i>itinutulak palayo ang tagapag-alaga, nilalabanan ang mga hakbang sa pangangalaga/pag-aliw</i></td>
+                <td style="width: 5%" id="consolabilityResult">0</td>
+            </tr>
+            <tr>
+                <th style="width: 95%" colspan="4">Total</th>
+                <th style="width: 5%" id="totalResult">0</th>
+            </tr>
+            <tr>
+                <th style="width: 95%" colspan="4">Sukat ng Sakit</th>
+                <th style="width: 5%" id="scoreLevelDesc">Walang Sakit</th>
+            </tr>
+        </table>
+        <br />
+        <section class="bordered">
+            <b>Lokasyon ng Sakit</b><br />
+            <p id="painLocations">None</p>
+        </section>
+        <br />
+        <section class="bordered">
+            <b>Mga Tala at Obserbasyon</b><br />
+            <p id="observations">N/A</p>
+        </section>
+        <br />
+        <hr />
+        <section class="notice">
+            <small><i>** Ito ay isang computer-generated report.</i></small>
+        </section>
+    </body>
+</html>

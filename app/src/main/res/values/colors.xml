@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#FFC9C9C9</color>
+    <color name="hint_gray">#FFB4B4B4</color>
+    <color name="darkgray">#FF5F5F5F</color>
+
+    <color name="title_font">#FF86DEF6</color>
+    <color name="title_shadow">#FF676767</color>
+
+    <color name="element_font">#FF5E17EB</color>
+    <color name="element_font_danger">#FFCC0000</color>
+    <color name="element_font_warning">#FFCC4E00</color>
+    <color name="element_font_lightinformatic">#FF00798E</color>
+    <color name="element_font_informatic">#FF2C0A71</color>
+    <color name="element_font_darker">#FF420EA7</color>
+
+    <color name="btn_tint">#FF0CC0DF</color>
+    <color name="btn_start_tint">#FF00E0E5</color>
+    <color name="lightinformatic_tint">#FFB6E8FF</color>
+    <color name="informatic_tint">#FFCA79EB</color>
+    <color name="warning_tint">#FFFFC099</color>
+    <color name="danger_tint">#FFFFC2C2</color>
+    <color name="sublayout_tint">#FFEBE9E9</color>
+
+    <color name="level_0_tint">#FF00BC63</color>
+    <color name="level_1_tint">#FFFFD21F</color>
+    <color name="level_2_tint">#FFFF914D</color>
+    <color name="level_3_tint">#FFFF3131</color>
+</resources>

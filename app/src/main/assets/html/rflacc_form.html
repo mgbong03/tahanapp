@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <style>
+            body {
+                padding: 6px 24px;
+            }
+
+            .center {
+                text-align: center;
+            }
+            table {
+                width: 100%;
+            }
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                vertical-align: top;
+            }
+            th {
+                text-align: left;
+            }
+            td {
+                text-align: justify;
+            }
+            th, td {
+                padding: 2px 6px;
+            }
+
+            .bordered {
+                border: 1px solid black;
+                padding: 5px 10px;
+            }
+            .bordered > p {
+                box-sizing: border-box;
+                display: inline-block;
+            }
+        </style>
+        <title>r-FLACC Assessment Record</title>
+    </head>
+    <body>
+        <h2 class="center">TahanApp r-FLACC Assessment Record</h2>
+        <table>
+            <tr>
+                <th style="width: 30%">Assessment Date & Time</th>
+                <td style="width: 70%" id="assessmentDateTime">N/A</td>
+            </tr>
+            <tr>
+                <th style="width: 30%">Name of Child</th>
+                <td style="width: 70%" id="nameOfChild">N/A</td>
+            </tr>
+            <tr>
+                <th style="width: 30%">Age of Child</th>
+                <td style="width: 70%" id="ageOfChild">N/A</td>
+            </tr>
+            <tr>
+                <th style="width: 30%">Gender of Child</th>
+                <td style="width: 70%" id="genderOfChild">N/A</td>
+            </tr>
+            <tr>
+                <th style="width: 30%">Diagnosis of Child</th>
+                <td style="width: 70%" id="diagnosisOfChild">N/A</td>
+            </tr>
+        </table>
+        <br />
+        <table>
+            <tr>
+                <th style="width: 5%"></th>
+                <th style="width: 30%">0</th>
+                <th style="width: 30%">1</th>
+                <th style="width: 30%">2</th>
+                <th style="width: 5%">Result</th>
+            </tr>
+            <tr>
+                <th style="width: 5%">Face</th>
+                <td style="width: 30%">No expression or smile</td>
+                <td style="width: 30%">Occasional grimace or frown, withdrawn, disinterested; appears sad or worried</td>
+                <td style="width: 30%">Frequent to constant frown, clenched jaw,  quivering chin; <i>distressed looking face;  expression of fright or panic</i></td>
+                <td style="width: 5%" id="faceResult">0</td>
+            </tr>
+            <tr>
+                <th style="width: 5%">Legs</th>
+                <td style="width: 30%">Normal position or relaxed; usual muscle tone and motion to arms and legs</td>
+                <td style="width: 30%">Uneasy, restless, tense;  occasional tremors</td>
+                <td style="width: 30%">Kicking, or legs drawn up; <i>marked increase in spasticity; constant tremors or jerking</i></td>
+                <td style="width: 5%" id="legsResult">0</td>
+            </tr>
+            <tr>
+                <th style="width: 5%">Activity</th>
+                <td style="width: 30%">Lying quietly, normal position, moves easily; regular rhythmic breaths (respiration)</td>
+                <td style="width: 30%">Squirming, shifting back and forth, tense or guarded movements; mildly agitated (head back and forth, aggression); shallow, splinting breaths (respirations); occasional sighs</td>
+                <td style="width: 30%">Arches, rigid, or jerking; <i>severe agitation; head banging; shivering (not rigors); breath holding, gasping, or sharp intake of breaths; severe splinting</i></td>
+                <td style="width: 5%" id="activityResult">0</td>
+            </tr>
+            <tr>
+                <th style="width: 5%">Cry</th>
+                <td style="width: 30%">No cry (awake or asleep)</td>
+                <td style="width: 30%">Moans or whimpers,  occasional complaint;  occasional verbal  outburst or grunt </td>
+                <td style="width: 30%">Crying steadily, screams or sobs, frequent complaints; <i>repeated outbursts; constant grunting</i></td>
+                <td style="width: 5%" id="cryResult">0</td>
+            </tr>
+            <tr>
+                <th style="width: 5%">Consolability</th>
+                <td style="width: 30%">Content, relaxed</td>
+                <td style="width: 30%">Reassured by occasional  touching, hugging, or "talking to"; Can be distracted </td>
+                <td style="width: 30%">Difficult to console or comfort; <i>pushing away caregiver; resisting care or comfort measures</i></td>
+                <td style="width: 5%" id="consolabilityResult">0</td>
+            </tr>
+            <tr>
+                <th style="width: 95%" colspan="4">Total</th>
+                <th style="width: 5%" id="totalResult">0</th>
+            </tr>
+            <tr>
+                <th style="width: 95%" colspan="4">Pain Level Description</th>
+                <th style="width: 5%" id="scoreLevelDesc">No Pain</th>
+            </tr>
+        </table>
+        <br />
+        <section class="bordered">
+            <b>Pain Locations</b><br />
+            <p id="painLocations">None</p>
+        </section>
+        <br />
+        <section class="bordered">
+            <b>Notes and Observations</b><br />
+            <p id="observations">N/A</p>
+        </section>
+        <br />
+        <hr />
+        <section class="notice">
+            <small><i>** This is a computer-generated report.</i></small>
+        </section>
+    </body>
+</html>

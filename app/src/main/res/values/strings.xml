@@ -1,0 +1,308 @@
+<resources>
+    <string name="app_name" translatable="false">TahanApp</string>
+    <string name="app_desc" translatable="false">Pain Assessment for Non-Verbal Children with ASD</string>
+    <string name="version_number" translatable="false">Version alpha-0.1.0</string>
+
+    <string name="login" translatable="false">Log In</string>
+    <string name="input_username" translatable="false">Username</string>
+    <string name="input_password" translatable="false">Password</string>
+    <string name="sign_up" translatable="false">Sign Up</string>
+
+    <string name="how_to_use">How to Use</string>
+    <string name="faq" translatable="false">FAQs</string>
+    <string name="about" translatable="false">About</string>
+    <string name="asd" translatable="false">ASD</string>
+    <string name="asd_full" translatable="false">Autism Spectrum Disorder</string>
+    <string name="profiles">Profiles</string>
+    <string name="years_old">%1$d years old</string>
+    <string name="add_profile">Add Profile</string>
+
+    <string name="input_profile_name_label">Name (Unique)<font color="#FF0000">*</font></string>
+    <string name="input_profile_name_hint">Name of the child</string>
+    <string name="input_profile_age_label">Age <font color="#FF0000">*</font></string>
+    <string name="input_profile_age_hint">Age of the child</string>
+    <string name="input_profile_gender_label">Gender <font color="#FF0000">*</font></string>
+    <string name="input_profile_gender_hint">Gender of the child</string>
+    <string name="input_profile_diagnosis_label" translatable="false">Diagnosis <font color="#FF0000">*</font></string>
+    <string name="input_profile_diagnosis_hint">Diagnosis of the child</string>
+    <string name="btn_save">Save</string>
+    <string name="upload_photo" translatable="false">Upload Photo</string>
+    <string name="notice">TahanApp is currently in Alpha testing version, and online backup is currently not available. User credentials will not be uploaded, and all data will remain on the local device.</string>
+    <string name="notice_title">Notice</string>
+    <string name="username_too_short">Username must be at least 4 characters long</string>
+    <string name="username_wrong_format">Username may only contain alphanumeric characters or underscores</string>
+    <string name="password_too_short">Password must be at least 4 characters long</string>
+    <string name="logged_out_force">You have been logged out. Please log in again.</string>
+    <string name="username_not_exists">Username does not exist</string>
+    <string name="invalid_password">Invalid password</string>
+    <string name="profile_icon" translatable="false">Profile Icon</string>
+    <string name="no_profiles">No profiles found.</string>
+    <string name="settings" translatable="false">Settings</string>
+    <string name="profile_name_empty">Profile name must not be empty</string>
+    <string name="invalid_image">Invalid image</string>
+    <string name="image_not_scalable">Could not scale image</string>
+    <string name="profile_age_outside_range">Profile age must be between 0 and 200</string>
+
+    <string-array name="genders" translatable="false">
+        <item>Unspecified / Di Nakatala</item>
+        <item>Male / Lalaki</item>
+        <item>Female / Babae</item>
+        <item>Other / Ibang Kasarian</item>
+    </string-array>
+    <string name="profile_age_empty">Profile age is required</string>
+    <string name="profile_diagnosis_required">Profile diagnosis is required</string>
+    <string name="profile_name_exists">A profile with this name already exists</string>
+    <string name="profile_add_success">Profile successfully added</string>
+    <string name="profile_name_too_long">Profile name must have a maximum of 50 characters</string>
+    <string name="asd_desc">Autism Spectrum Disorder (ASD) is a developmental condition that affects a person’s social interaction, communication, and behavior. Its effects vary from one individual to another, which is why it is referred to as a “spectrum.”</string>
+    <string name="level_1">Level 1</string>
+    <string name="level_2">Level 2</string>
+    <string name="level_3">Level 3</string>
+    <string name="level_1_desc">Requires a small amount of assistance in daily activities.</string>
+    <string name="level_2_desc">Requires moderate support in communication and behavior.</string>
+    <string name="level_3_desc">Requires intensive support in daily living and social interaction.</string>
+    <string name="causes_risk_factors">Causes and Risk Factors</string>
+    <string name="causes_risk_factors_desc">
+        There is no single cause of ASD, but there are factors that can affect it:\n
+        &#8226; Genetic factors or family history of ASD\n
+        &#8226; Having certain pregnancy conditions or complications in prenatal development\n
+        &#8226; Exposure to certain environmental factors while in the womb.
+    </string>
+    <string name="how_to_use_app_desc">This app helps parents or caregivers assess the physical symptoms of children with Autism Spectrum Disorder who are unable to speak.</string>
+    <string name="guide_title">Guide to every step</string>
+    <string name="guide_step_1">Enter Child Profile</string>
+    <string name="guide_step_1_guide">Press the + button on the home screen and enter the child\'s name and age</string>
+    <string name="guide_step_2">Observe the Child</string>
+    <string name="guide_step_2_guide">Carefully observe the child\'s movements, facial expressions, and reactions for 5 minutes.</string>
+    <string name="guide_step_3">Use the r-FLACC Scale</string>
+    <string name="guide_step_3_guide">Select a pain score for each category: Face, Legs, Activity, Cry, and Consolability.</string>
+    <string name="guide_step_4">Mark the Location of Pain</string>
+    <string name="guide_step_4_guide">Touch the body diagram where the child feels pain</string>
+    <string name="guide_step_5">Add a Note</string>
+    <string name="guide_step_5_guide">Write down anything else you notice about the child\'s condition</string>
+    <string name="guide_step_6">View Results</string>
+    <string name="guide_step_6_guide">You will see the overall score and recommendations for care</string>
+    <string name="guide_information">The r-FLACC is a validated tool for nonverbal children with developmental disabilities. It is used in hospitals and clinics around the world.</string>
+    <string name="faq_rflacc">What is r-FLACC?</string>
+    <string name="faq_rflacc_desc">"The r-FLACC (revised Face, Legs, Activity, Cry, Consolability) is a validated behavioral pain assessment tool designed for nonverbal children, especially children with developmental disabilities such as Autism Spectrum Disorder (ASD).  It assesses five categories of behavior, attitudes, or behaviors. Each is scored from 0-2, for a total possible score of 0-10.     "</string>
+    <string name="faq_read_scores">How to Read Scores?</string>
+    <string name="faq_read_scores_level_0">0: No Pain or Comfort</string>
+    <string name="faq_read_scores_level_0_desc">The child is comfortable.</string>
+    <string name="faq_read_scores_level_1">1-3: Mild Pain</string>
+    <string name="faq_read_scores_level_1_desc">The child has only minor discomfort. Only minimal comfort measures are needed.</string>
+    <string name="faq_read_scores_level_2">4-6: Moderate Pain</string>
+    <string name="faq_read_scores_level_2_desc">The child has clear pain behavior. Pain relief measures and monitoring are required.</string>
+    <string name="faq_read_scores_level_3">7-10: Severe Pain</string>
+    <string name="faq_read_scores_level_3_desc">The child is in severe pain. Immediate medical intervention is required. Consult a doctor or go to the nearest ER.</string>
+    <string name="faq_assessment_frequency">How Often to Assess</string>
+    <string name="faq_assessment_frequency_desc">
+        &#160;&#8226;&#160;&#160;When there is suspicion of illness.
+        \n&#160;&#8226;&#160;&#160;Before and after pain relief intervention.
+        \n&#160;&#8226;&#160;&#160;Regular monitoring if there is ongoing pain.
+        \n&#160;&#8226;&#160;&#160;When the child\'s behavior changes
+    </string>
+    <string name="faq_consult_doctor">When should you consult a doctor?</string>
+    <string name="faq_consult_doctor_desc">
+        Seek medical help immediately if:
+        \n&#160;&#8226;&#160;&#160;Score is 7-10 (Severe pain)
+        \n&#160;&#8226;&#160;&#160;Have fever, vomiting, or diarrhea
+        \n&#160;&#8226;&#160;&#160;There is a visible injury or swelling
+        \n&#160;&#8226;&#160;&#160;The child is not eating or drinking
+        \n&#160;&#8226;&#160;&#160;No improvement in pain relief
+        \n&#160;&#8226;&#160;&#160;Have seizures or difficulty breathing
+        \n&#160;&#8226;&#160;&#160;If you are in doubt about the child\'s condition
+    </string>
+    <string name="faq_note">Note: TahanApp is a tool for assessment only, not a substitute for professional medical advice. Always consult a healthcare provider for proper diagnosis and treatment.</string>
+    <string name="about_title" translatable="false">About &amp; Privacy</string>
+    <string name="about_about">About the App</string>
+    <string name="about_about_desc">
+        TahanApp is a mobile application designed to help primary caregivers assess, monitor, and treat the physical pain experienced by children with Autism Spectrum Disorder who cannot speak.
+        \n\nWe use the culturally validated r- FLACC scale or Revised Face, Legs, Activity, Cry, Consolability, which is an internationally recognized tool for pain assessment in children with cognitive impairment.
+    </string>
+    <string name="about_privacy" translatable="false">Privacy and Data Security</string>
+    <string name="about_privacy_desc1">
+        <b>Local Storage:</b> All your data is stored on your device only. No personal information is sent to the internet or other servers.
+    </string>
+    <string name="about_privacy_desc2">
+        <b>No Third-party Sharing:</b> We do not share your information with anyone.
+    </string>
+    <string name="about_privacy_desc3">
+        <b>Secure Storage:</b> All passwords are hashed for added protection
+    </string>
+    <string name="about_reminder">Important Note</string>
+    <string name="about_reminder_desc1">
+        TahanApp is a tool for pain assessment only. <b>It is not a substitute for professional medical advice, diagnosis, or treatment.</b>
+    </string>
+    <string name="about_reminder_desc2">
+        If the child has severe pain (score 7 – 10) or other alarming symptoms, <b>immediately consult a doctor or head to an emergency room.</b>
+    </string>
+    <string name="about_contact">Contact &amp; Support</string>
+    <string name="about_contact_desc">For questions or suggestions, please contact your healthcare provider or the development team.</string>
+    <string name="contact_cnph" translatable="false">CNPH</string>
+    <string name="contact_cnph_no" translatable="false">0981 410 1224</string>
+    <string name="contact_daet_mdrrmo" translatable="false">Daet MDRRMO</string>
+    <string name="contact_daet_mdrrmo_no" translatable="false">0912 855 5551</string>
+    <string name="contact_cn_pdrrmo" translatable="false">Camarines Norte PDRRMO</string>
+    <string name="contact_cn_pdrrmo_no1" translatable="false">0998 561 5388</string>
+    <string name="contact_cn_pdrrmo_no2" translatable="false">0917 583 9147</string>
+    <string name="profile" translatable="false">Profile</string>
+    <string name="start_new_assessment">Start a New Assessment</string>
+    <string name="history" translatable="false">History</string>
+    <string name="latest_assessment">Latest Assessments</string>
+    <string name="no_assessments">No assessments yet</string>
+    <string name="prompt_start_assessment">Press the <b>Start a New Assessment</b> button above to get started.</string>
+    <string name="gender_display">Gender: %1$s</string>
+    <string name="diagnosis_display" translatable="false">Diagnosis: %1$s</string>
+    <string name="assessment_count">%1$d assessment(s)</string>
+    <string name="score_level_0">No Pain</string>
+    <string name="score_level_1">Mild</string>
+    <string name="score_level_2">Moderate</string>
+    <string name="score_level_3">Severe</string>
+    <string name="score_format" translatable="false"><b>%1$d</b> / 10</string>
+    <string name="score_format_sub" translatable="false"><b>%1$d</b> / 2</string>
+    <string name="next">Next</string>
+    <string name="create_assessment">Create Assessment</string>
+    <string name="rflacc_head_desc">Observe the child and select the score that is closest to his or her behavior over the past 5 minutes.</string>
+    <string name="rflacc_face">Face</string>
+    <string name="rflacc_legs">Legs</string>
+    <string name="rflacc_activity">Activity</string>
+    <string name="rflacc_cry">Cry</string>
+    <string name="rflacc_consolability">Consolability</string>
+    <string name="rflacc_score_0">No Pain</string>
+    <string name="rflacc_score_1">Mild Pain</string>
+    <string name="rflacc_score_2">Severe Pain</string>
+    <string name="rflacc_score_0_face">No expression or smile</string>
+    <string name="rflacc_score_1_face">Occasional grimace or frown, withdrawn, disinterested; appears sad or worried</string>
+    <string name="rflacc_score_2_face">Frequent to constant frown, clenched jaw, quivering chin; <b>distressed looking face; expression of fright or panic</b></string>
+    <string name="_0" translatable="false">0</string>
+    <string name="_1" translatable="false">1</string>
+    <string name="_2" translatable="false">2</string>
+    <string name="finish">Save Assessment</string>
+    <string name="create_assessment_step_1" translatable="false">r-FLACC: 1 of 5</string>
+    <string name="create_assessment_step_2" translatable="false">r-FLACC: 2 of 5</string>
+    <string name="create_assessment_step_3" translatable="false">r-FLACC: 3 of 5</string>
+    <string name="create_assessment_step_4" translatable="false">r-FLACC: 4 of 5</string>
+    <string name="create_assessment_step_5" translatable="false">r-FLACC: 5 of 5</string>
+    <string name="rflacc_score_0_legs">Normal position or relaxed; usual muscle tone and motion to arms and legs</string>
+    <string name="rflacc_score_1_legs">Uneasy, restless, tense; occasional tremors</string>
+    <string name="rflacc_score_2_legs">Kicking, or legs drawn up; <b>marked increase in spasticity; constant tremors or jerking</b></string>
+    <string name="score_needed">Please select a score</string>
+    <string name="rflacc_score_0_activity">Lying quietly, normal position, moves easily; regular rhythmic breaths (respiration)</string>
+    <string name="rflacc_score_1_activity">Squirming, shifting back and forth, tense or guarded movements; mildly agitated (head back and forth, aggression); shallow, splinting breaths (respirations); occasional sighs</string>
+    <string name="rflacc_score_2_activity">Arches, rigid, or jerking; <b>severe agitation; head banging; shivering (not rigors); breath holding, gasping, or sharp intake of breaths; severe splinting</b></string>
+    <string name="rflacc_score_0_cry">No cry (awake or asleep)</string>
+    <string name="rflacc_score_1_cry">Moans or whimpers, occasional complaint; occasional verbal outburst or grunt</string>
+    <string name="rflacc_score_2_cry">Crying steadily, screams or sobs, frequent complaints; <b>repeated outbursts; constant grunting</b></string>
+    <string name="rflacc_score_0_consolability">Content, relaxed</string>
+    <string name="rflacc_score_1_consolability">Reassured by occasional touching, hugging, or \"talking to\"; Can be distracted</string>
+    <string name="rflacc_score_2_consolability">Difficult to console or comfort; <b>pushing away caregiver; resisting care or comfort measures</b></string>
+    <string name="pain_location">Location of Pain</string>
+    <string name="pain_location_desc">Click on the body diagram where the child feels pain. You can add multiple locations.</string>
+    <string name="pain_location_front">Front</string>
+    <string name="pain_location_back">Back</string>
+    <string name="selected_locations">Selected Locations: %1$s</string>
+    <string name="observations">Observations</string>
+    <string name="observations_desc">Write down anything else you have noticed about the child\'s condition.\\n\\nFor example: behavior, symptoms, etc. (Optional)</string>
+    <string name="notes_observations">Notes and Observations</string>
+    <string name="enter_observation_here">Enter notes and observations here…</string>
+    <string name="observations_examples">
+        Examples of What to Write
+        \n\n&#160;&#8226;&#160;&#160;What did you notice about the child\'s behavior?
+        \n&#160;&#8226;&#160;&#160;Are there any other symptoms? (Fever, vomiting, cough)
+        \n&#160;&#8226;&#160;&#160;When did the illness start?
+        \n&#160;&#8226;&#160;&#160;Did anything happen before the injury? (Tripping, getting into a collision)
+        \n&#160;&#8226;&#160;&#160;What did you do to calm down the child?
+    </string>
+    <string name="assessment_finished">The Assessment is complete.</string>
+    <string name="assessment_breakdown" translatable="false">r-FLACC Breakdown</string>
+    <string name="what_can_you_do">What Can You Do?</string>
+    <string name="interventions_level_0">
+        &#160;&#8226;&#160;&#160;Continue with normal eating, sleeping, and play routine.
+        \n&#160;&#8226;&#160;&#160;Offer praise or hugs when the child is doing well.
+        \n&#160;&#8226;&#160;&#160;Observe and record the child\'s normal behavior.
+    </string>
+    <string name="interventions_level_1">
+        &#160;&#8226;&#160;&#160;Play or read books, use bubbles or videos to distract the child.
+        \n&#160;&#8226;&#160;&#160;Adjust the child\'s position, use pillows for extra comfort.
+        \n&#160;&#8226;&#160;&#160;Play calming music or white noise; hold or gently stroke the child\'s hand.
+        \n&#160;&#8226;&#160;&#160;Stay calm and speak to the child in a soothing voice.
+    </string>
+    <string name="interventions_level_2">
+        &#160;&#8226;&#160;&#160;For infants: kangaroo care or swaddling.
+        \n&#160;&#8226;&#160;&#160;For older children: deep breathing or \"blow away the pain,\" or play to distract their attention.
+        \n&#160;&#8226;&#160;&#160;Use a warm compress for tense muscles or cold for swelling.
+        \n&#160;&#8226;&#160;&#160;Dim the lights and reduce noise.
+        \n&#160;&#8226;&#160;&#160;Stay calm and speak gently.
+    </string>
+    <string name="interventions_level_3">
+        &#160;&#8226;&#160;&#160;Stay within the child\'s line of sight and speak calmly.
+        \n&#160;&#8226;&#160;&#160;Gently rock or shake the child to calm them down.
+        \n&#160;&#8226;&#160;&#160;Tell stories or imagine their favorite place to distract them.
+        \n&#160;&#8226;&#160;&#160;Ensure the child\'s safety; prevent self-harm.
+        \n&#160;&#8226;&#160;&#160;Call the doctor or nurse immediately if the pain doesn’t decrease.
+    </string>
+    <string name="assessment_summary" translatable="false">Assessment Summary</string>
+    <string name="assessment_saved">Successfully saved assessment.</string>
+    <string name="assessment_history">Assessment History</string>
+    <string name="reset_button">Reset</string>
+    <string name="reset_selection">Reset Selection</string>
+    <string name="reset_selection_prompt">Reset the selection?</string>
+    <string name="reset_cancelled">Cancelled reset.</string>
+    <string name="reset_selection_success">Selection reset.</string>
+    <string name="reset_selection_empty">Cannot reset, selection is empty</string>
+    <string name="save_summary_title">Save Assessment</string>
+    <string name="save_summary_prompt">Save assessment?</string>
+    <string name="settings_account" translatable="false">Account: %1$s</string>
+    <string name="log_out" translatable="false">Log Out</string>
+    <string name="edit_password">Change Password</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="logout_confirmation">Are you sure you want to log out?</string>
+    <string name="logout_cancel">Canceled logout.</string>
+    <string name="change_password_old">Old Password <font color="#FF0000">*</font></string>
+    <string name="change_password_new">New Password <font color="#FF0000">*</font></string>
+    <string name="change_password_new_confirm">Confirm New Password <font color="#FF0000">*</font></string>
+    <string name="change_password_old_hint">Old Password</string>
+    <string name="change_password_new_hint">New Password</string>
+    <string name="change_password_new_confirm_hint">Confirm New Password</string>
+    <string name="confirm_sign_up_password">Please confirm your password.</string>
+    <string name="signup_cancel">Cancelled account creation.</string>
+    <string name="passwords_do_not_match">Passwords do not match.</string>
+    <string name="user_exists">User with this username already exists</string>
+    <string name="preliminary">Preliminary</string>
+    <string name="awake_children">For children who are awake:</string>
+    <string name="awake_children_desc">Observe for at least 1-2 minutes. Observe legs and body uncovered. Reposition patient or observe activity, assess body for tenseness and tone. Initiate consoling interventions if needed.</string>
+    <string name="asleep_children">For children who are asleep:</string>
+    <string name="asleep_children_desc">Observe for at least 2 minutes or longer. Observe legs and body uncovered. If possible, reposition the patient. Touch the body and assess for tenseness and tone.</string>
+    <string name="preliminary_end">The revised FLACC can be used for all non-verbal children. The additional descriptors (in italics) are descriptors validated in children with cognitive impairment. The nurse can review with parents/caregivers the descriptors within each category. Ask the parents/caregivers if there are additional behaviours that are better indicators of their child experiencing pain. Add these behaviours to the tool in the appropriate category.</string>
+    <string name="language">Language</string>
+    <string name="language_sysdefault">Use system default</string>
+    <string name="language_english">English</string>
+    <string name="language_filipino">Filipino</string>
+    <string name="language_change">Language Change</string>
+    <string name="language_change_desc">Changing the app language requires an app restart. Proceed?</string>
+    <string name="language_change_cancel">Canceled language change.</string>
+    <string name="play_sound">Play Instruction</string>
+    <string name="audio_not_playable">Could not play audio.</string>
+    <string name="audio_play">Playing instruction audio...</string>
+    <string name="delete_account_confirm">Are you sure you want to delete your account? This action cannot be undone!</string>
+    <string name="delete_account_cancel">Canceled account deletion.</string>
+    <string name="unsaved_changes" translatable="false">Unsaved Changes</string>
+    <string name="unsaved_changes_prompt">Are you sure you want to exit without saving?</string>
+    <string name="settings_narration" translatable="false">Narration</string>
+    <string name="narration_enable_all">Enable Filipino narrations outside Filipino language</string>
+    <string name="settings_saved">Saved settings.</string>
+    <string name="password_change_success">Password successfully changed</string>
+    <string name="delete_profile">Delete Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="delete_profile_confirm">Are you sure you want to delete this profile? This action cannot be undone!</string>
+    <string name="profile_remove_success">Deleted user profile.</string>
+    <string name="delete_profile_cancel">Canceled profile deletion.</string>
+    <string name="profile_not_exists">This profile no longer exists</string>
+    <string name="profile_edit_success">Profile successfully updated.</string>
+    <string name="assessment_datetime">Assessment Date &amp; Time</string>
+    <string name="n_a" translatable="false">N/A</string>
+    <string name="assessment_not_exists">Assessment does not exist</string>
+    <string name="print">Print</string>
+    <string name="print_started" translatable="false">Printing r-FLACC form...</string>
+    <string name="pain_trends">Pain Trends (Past 7 Days)</string>
+</resources>

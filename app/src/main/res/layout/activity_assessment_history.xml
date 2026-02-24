@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".activity.AssessmentHistoryActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <include layout="@layout/toolbar_center_title" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/trendsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_bg"
+                android:paddingHorizontal="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="15dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5sp"
+                    android:fontFamily="@font/frutiger_bold"
+                    android:text="@string/pain_trends"
+                    android:textColor="@color/element_font"
+                    android:textSize="18sp" />
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/trendsChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/assessmentsView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="false"
+                android:orientation="vertical"
+                android:overScrollMode="never"
+                tools:itemCount="3"
+                tools:listitem="@layout/card_assessment" />
+            <LinearLayout
+                android:id="@+id/noAssessmentsFound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_bg"
+                android:backgroundTint="@color/sublayout_tint"
+                android:foregroundTint="@color/sublayout_tint"
+                android:backgroundTintMode="multiply"
+                android:foregroundTintMode="multiply"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="50dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="5dp"
+                    app:srcCompat="@drawable/clipboard" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/frutiger_bold"
+                    android:textColor="@color/gray"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/no_assessments"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

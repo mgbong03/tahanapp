@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".fragment.RFlaccActivityFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/layout_bg"
+        android:orientation="vertical"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5sp"
+            android:fontFamily="@font/frutiger_bold"
+            android:text="@string/observations"
+            android:textColor="@color/element_font"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            app:drawableStartCompat="@drawable/assessment_icon_2_24dp"
+            android:drawablePadding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/frutiger"
+            android:text="@string/observations_desc"
+            android:textColor="@color/darkgray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/layout_bg"
+        android:orientation="vertical"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5sp"
+            android:fontFamily="@font/frutiger_bold"
+            android:text="@string/notes_observations"
+            android:textColor="@color/element_font"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"/>
+
+        <EditText
+            android:id="@+id/observationInput"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="top|start"
+            android:hint="@string/enter_observation_here"
+            android:textSize="12sp"
+            android:textColor="@color/darkgray"
+            android:textColorHint="@color/gray"
+            android:fontFamily="@font/frutiger"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:background="@drawable/layout_textfield_profile" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_bg"
+        android:backgroundTint="@color/informatic_tint"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        tools:ignore="UselessParent">
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginHorizontal="5dp"
+            android:contentDescription="@string/asd_full"
+            app:srcCompat="@drawable/information_icon" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/element_font_informatic"
+            android:fontFamily="@font/frutiger"
+            android:text="@string/observations_examples"/>
+    </LinearLayout>
+</LinearLayout>

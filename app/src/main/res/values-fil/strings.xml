@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="how_to_use">Paano Gamitin</string>
+    <string name="profiles">Mga Profile</string>
+    <string name="years_old">%1$d taong gulang</string>
+
+    <string name="add_profile">Magdagdag ng Profile</string>
+    <string name="input_profile_name_label">Pangalan (Tangi)<font color="#FF0000">*</font></string>
+    <string name="input_profile_name_hint">Ilagay ang pangalan ng bata</string>
+    <string name="input_profile_age_label">Edad</string>
+    <string name="input_profile_age_hint">Ilagay ang edad ng bata</string>
+    <string name="input_profile_gender_label">Kasarian</string>
+    <string name="input_profile_gender_hint">Ilagay ang kasarian ng bata</string>
+    <string name="input_profile_diagnosis_hint">Ilagay ang diagnosis ng bata</string>
+    <string name="btn_save">I-Save</string>
+    <string name="notice">Ang TahanApp ay kasalukuyang nasa Alpha testing version, at ang online na backup ay kasalukuyang hindi available. Ang lahat ng user credentials ay hindi i-uupload, at ang lahat ng data ay mananatili sa local device.</string>
+    <string name="notice_title">Paunawa</string>
+    <string name="username_too_short">"Ang username ay dapat hindi bababa sa 4 na letra "</string>
+    <string name="username_wrong_format">Ang username ay maaari lamang maglaman ng alphanumeric na letra o ng underscore</string>
+    <string name="password_too_short">"Ang password ay dapat hindi bababa sa 8 na letra "</string>
+    <string name="logged_out_force">Ikaw ay nai-log out. Kung maaari ay mag-login muli.</string>
+    <string name="username_not_exists">Di mahanap ang username</string>
+    <string name="invalid_password">Maling password</string>
+    <string name="no_profiles">Walang nahanap na profile.</string>
+    <string name="profile_name_empty">Ang pangalan ng bata ay di maaaring walang laman</string>
+    <string name="invalid_image">Di valid ang image</string>
+    <string name="image_not_scalable">Di mai-scale ang image</string>
+    <string name="profile_age_outside_range">Ang edad ng bata ay dapat nasa pagitan ng 0 at 200 na taong gulang</string>
+    <string name="profile_age_empty">Kailangan ang edad ng bata</string>
+    <string name="profile_diagnosis_required">Kailangan ang diagnosis ng bata</string>
+    <string name="profile_name_exists">Mayroon nang profile na magkaparehas ang pangalan</string>
+    <string name="profile_add_success">Matagumpay na nagawa ang profile</string>
+    <string name="profile_name_too_long">"Ang profile name ay dapat hindi lalagpas sa 50 na letra "</string>
+    <string name="asd_desc">Ang Autism Spectrum Disorder (ASD) ay isang kondisyong pang-paglaki o developmental na nakaaapekto sa pakikisalamuha, komunikasyon, at pag-uugali ng isang tao. Nagkakaiba-iba ang epekto nito sa bawat indibidwal, kaya ito tinatawag na “spectrum.”</string>
+    <string name="level_1">Antas 1</string>
+    <string name="level_2">Antas 2</string>
+    <string name="level_3">Antas 3</string>
+    <string name="level_1_desc">Nangangailangan ng kaunting tulong sa mga pang-araw-araw na gawain.</string>
+    <string name="level_2_desc">Nangangailangan ng katamtamang suporta sa komunikasyon at pag-uugali.</string>
+    <string name="level_3_desc">Nangangailangan ng masinsin o matinding suporta sa pang-araw-araw na pamumuhay at pakikipag-ugnayan sa iba.</string>
+    <string name="causes_risk_factors">Causes and Risk Factors\tMga Sanhi at Salik ng Panganib</string>
+    <string name="causes_risk_factors_desc">
+        Walang iisang sanhi ang ASD, ngunit may mga salik na maaaring makaapekto rito:\n
+        &#183; Mga salik na henetiko o pagkakaroon ng kasaysayan ng ASD sa pamilya\n
+        &#183; Pagkakaroon ng ilang kondisyon o komplikasyon sa pagbubuntis o sa pag-unlad ng sanggol habang nasa sinapupunan\n
+        &#183; Pagkakalantad sa ilang mga salik sa kapaligiran habang nasa sinapupunan
+    </string>
+    <string name="how_to_use_app_desc">Ang app na ito ay tumutulong sa mga magulang o tagapag-alaga na masuri ang mga pisikal na sintomas ng mga batang may Autism Spectrum Disorder na hindi nakapagsasalita.</string>
+    <string name="guide_title">Gabay sa bawat hakbang</string>
+    <string name="guide_step_1">Ilagay ang Impormasyon ng Bata</string>
+    <string name="guide_step_1_guide">Pindutin ang + na button sa home screen at ilagay ang pangalan at edad ng bata.</string>
+    <string name="guide_step_2">Obserbahan ang Bata</string>
+    <string name="guide_step_2_guide">Carefully observe the child\'s movements, facial expressions, and reactions for 5 minutes.</string>
+    <string name="guide_step_3">Gamitin ang r-FLACC Scale</string>
+    <string name="guide_step_3_guide">Piliin ang score ng sakit para sa bawat kategorya: Mukha, Mga Binti, Aktibiti, Pag-iyak, at Kapanatagan.</string>
+    <string name="guide_step_4">Tandaan ang Lokasyon ng Sakit</string>
+    <string name="guide_step_4_guide">Hawakan o i-tap ang diagram ng katawan sa lugar kung saan nararamdaman ng bata ang sakit.</string>
+    <string name="guide_step_5">Dagdagan ng Tala</string>
+    <string name="guide_step_5_guide">Isulat ang iba pang napansin mo tungkol sa kondisyon ng bata</string>
+    <string name="guide_step_6">Tingnan ang Resulta</string>
+    <string name="guide_step_6_guide">Makikita mo ang kabuuang score at mga rekomendasyon para sa pangangalaga.</string>
+    <string name="guide_information">Ang r-FLACC ay isang validated na tool para sa nonverbal na mga bata na may mga kapansanan sa pag-unlad. Ginagamit ito sa mga ospital at klinika sa buong mundo.</string>
+    <string name="faq_rflacc">Ano ang r-FLACC?</string>
+    <string name="faq_rflacc_desc">Ang r-FLACC (revised Face, Legs, Activity, Cry, Consolability) ay isang validated behavioral tool sa pagsusuri ng sakit batay sa kilos na idinisenyo para sa mga batang hindi nakapagsasalita, lalo na sa mga batang may developmental disabilities tulad ng Autism Spectrum Disorder (ASD).\n\nSinusuri nito ang limang kategorya ng kilos, ekspresyon, o ugali. Bawat isa ay binibigyan ng score mula 0-2, na may kabuuang posibleng score na 0-10.</string>
+    <string name="faq_read_scores">Paano Basahin ang Mga Marka?</string>
+    <string name="faq_read_scores_level_0">0: Walang Sakit o Kumportable</string>
+    <string name="faq_read_scores_level_0_desc">Ang bata ay kumportable.</string>
+    <string name="faq_read_scores_level_1">1-3: Banayad na Sakit</string>
+    <string name="faq_read_scores_level_1_desc">Ang bata ay nakararanas lamang ng kaunting hindi komportable. Kailangan lamang ng kaunting hakbang para maibsan ang sakit.</string>
+    <string name="faq_read_scores_level_2">4-6: Katamtamang Sakit</string>
+    <string name="faq_read_scores_level_2_desc">Ang bata ay nagpapakita ng malinaw na kilos ng sakit. Kinakailangan ang mga hakbang para maibsan ang sakit at ang patuloy na pagmamasid.</string>
+    <string name="faq_read_scores_level_3">7-10: Matinding Sakit</string>
+    <string name="faq_read_scores_level_3_desc">Ang bata ay nakararanas ng matinding sakit. Agarang medikal na interbensyon ang kinakailangan. Kumonsulta sa doktor o pumunta sa pinakamalapit na emergency room.</string>
+    <string name="faq_assessment_frequency">Gaano Kadalas Mag-assess</string>
+    <string name="faq_assessment_frequency_desc">
+        &#160;&#8226;&#160;&#160;Kapag may hinala ng sakit
+        \n&#160;&#8226;&#160;&#160;Bago at pagkatapos ng mga hakbang para maibsan ang sakit
+        \n&#160;&#8226;&#160;&#160;Regular na pagmamasid kung may patuloy na sakit
+        \n&#160;&#8226;&#160;&#160;Kapag nagbago ang kilos o ugali ng bata
+    </string>
+    <string name="faq_consult_doctor">Kailan Dapat Kumonsulta sa Doktor?</string>
+    <string name="faq_consult_doctor_desc">
+        Agad na humingi ng medikal na tulong kung:
+        \n&#160;&#8226;&#160;&#160;Score ay 7–10 (Matinding sakit)
+        \n&#160;&#8226;&#160;&#160;May lagnat, pagsusuka, o pagtatae
+        \n&#160;&#8226;&#160;&#160;May nakikitang pinsala o pamamaga
+        \n&#160;&#8226;&#160;&#160;Hindi kumakain o umiinom ang bata
+        \n&#160;&#8226;&#160;&#160;Walang pagbabago sa sakit kahit may pain relief
+        \n&#160;&#8226;&#160;&#160;May seizure o hirap sa paghinga
+        \n&#160;&#8226;&#160;&#160;Kung nagdadalawang-isip tungkol sa kalagayan ng bata
+    </string>
+    <string name="faq_note">Tandaan: Ang TahanApp ay isang kasangkapan lamang para sa pagsusuri at hindi pamalit sa propesyonal na payong medikal. Laging kumonsulta sa isang healthcare provider para sa tamang diagnosis at paggamot.</string>
+    <string name="about_about">Tungkol sa App</string>
+    <string name="about_about_desc">
+        Ang TahanApp ay isang mobile application na idinisenyo upang tulungan ang pangunahing tagapag-alaga na masuri, mamonitor, at matugunan ang pisikal na sakit na nararanasan ng mga batang may Autism Spectrum Disorder na hindi makapagsalita.
+        \n\nGumagamit ito ng culturally validated na r-FLACC scale o Revised Face, Legs, Activity, Cry, Consolability, na isang pandaigdigang kinikilalang kasangkapan sa pagsusuri ng sakit sa mga batang may cognitive impairment.
+    </string>
+    <string name="about_privacy_desc1">
+        <b>Lokal na Imbakan:</b> Lahat ng iyong data ay nakaimbak lamang sa iyong device. Walang personal na impormasyon ang ipinapadala sa internet o sa ibang server.<br />
+    </string>
+    <string name="about_privacy_desc2">
+        <b>Walang Ibinabahaging Third-party:</b> Hindi namin ibinabahagi ang iyong impormasyon sa kahit sino.<br />
+    </string>
+    <string name="about_privacy_desc3">
+        <b>Ligtas na Storage:</b> Lahat ng password ay naka-hash para sa dagdag na proteksyon.
+    </string>
+    <string name="about_reminder">Mahalagang Paalala</string>
+    <string name="about_reminder_desc1">
+        Ang TahanApp ay isang tool para sa pain assessment lamang. <b>Hindi ito kapalit ng propesyonal na medikal na payo, diagnosis, o treatment.</b>
+    </string>
+    <string name="about_reminder_desc2">
+        Kung ang bata ay may matinding sakit (score 7-10) o may iba pang nakakaalarmang sintomas, <b>agad na kumonsulta sa doktor o pumunta sa emergency room.</b>
+    </string>
+    <string name="about_contact">Kontak at Suporta</string>
+    <string name="about_contact_desc">Para sa mga tanong o suhestiyon, mangyaring makipag-ugnayan sa healthcare provider o sa development team.</string>
+    <string name="start_new_assessment">"Magsimula ng Bagong Assessment "</string>
+    <string name="latest_assessment">"Kamakailang Mga Assessment "</string>
+    <string name="no_assessments">Wala pang mga assessment</string>
+    <string name="prompt_start_assessment">Pindutin ang <b>Magsimula ng Bagong Assessment</b> button sa itaas upang makapagsimula</string>
+    <string name="gender_display">Kasarian: %1$s</string>
+    <string name="assessment_count">%1$d na assessment</string>
+    <string name="score_level_0">Walang Sakit</string>
+    <string name="score_level_1">Banayad</string>
+    <string name="score_level_2">Katamtaman</string>
+    <string name="score_level_3">Matindi</string>
+    <string name="next">Susunod</string>
+    <string name="create_assessment">Gumawa ng Assessment</string>
+    <string name="rflacc_head_desc">"Obserbahan ang bata at piliin ang score na pinakamalapit sa kanyang behavior sa nakaraang 5 minuto. "</string>
+    <string name="rflacc_face">Mukha (Face)</string>
+    <string name="rflacc_legs">Binti (Legs)</string>
+    <string name="rflacc_activity">Aktibiti (Activity)</string>
+    <string name="rflacc_cry">Pag-iyak (Cry)</string>
+    <string name="rflacc_consolability">Nabibigyang-aliw/Kapanatagan (Consolability)</string>
+    <string name="rflacc_score_0">Walang Sakit</string>
+    <string name="rflacc_score_1">Banayad na Sakit</string>
+    <string name="rflacc_score_2">Matinding Sakit</string>
+    <string name="rflacc_score_0_face">Walang nababakas/ekspresyon na ngiti o kasiyahan</string>
+    <string name="rflacc_score_1_face">Paminsan-minsan na pagngiwi o pagsimangot, umiiwas, walang pakialam, at mukhang malungkot o kaya’y nag-aalala</string>
+    <string name="rflacc_score_2_face">Madalas hanggang sa palaging pagsimangot, nakakuyom na panga, nanginginig na baba, <b>mukhang nababagabag at may ekspresyon ng takot o pagkataranta</b></string>
+    <string name="finish">I-Save ang Assessment</string>
+    <string name="rflacc_score_0_legs">Normal na posisyon/nakakarelaks; karaniwang kondisyon ng kalamnan at paggalaw ng mga braso at binti</string>
+    <string name="rflacc_score_1_legs">Hindi mapakali, tensyonado, at paminsan-minsang panginginig</string>
+    <string name="rflacc_score_2_legs">Pagsipa o paghila ng mga binti, <b>kapansin-pansing paninigas ng mga kalamnan at patuloy na panginginig at pagkagulat</b></string>
+    <string name="score_needed">Pumili muna ng score</string>
+    <string name="rflacc_score_0_activity">Tahimik na nakahiga, normal na posisyon, madaling gumalaw; regular na ritmikong paghinga (respirasyon)</string>
+    <string name="rflacc_score_1_activity">Pamimilipit, paggalaw nang pabalik-balik, tensyonado o maingat na paggalaw; bahagyang balisa (pagbaling-baling ng ulo o agresyon); mababaw at siksik na paghinga; paminsan-minsang pagbuntong-hininga</string>
+    <string name="rflacc_score_2_activity">Pag-arko ng katawan, paninigas o biglaang pag-uga; <b>matinding pagkabalisa; pag-untog ng ulo; panginginig (hindi dahil sa lagnat), pagpigil ng hininga o biglaang paghingal; matinding paninigas ng kalamnan</b></string>
+    <string name="rflacc_score_0_cry">Walang pag-iyak (gising man o tulog)</string>
+    <string name="rflacc_score_1_cry">Mga ungol o hikbi, paminsan-minsang reklamo, sigaw, at pag-ungol</string>
+    <string name="rflacc_score_2_cry">Patuloy na pag-iyak, pagsigaw o paghikbi, madalas na mga reklamo; <b>paulit-ulit na pag-ungol at pagkagalit</b></string>
+    <string name="rflacc_score_0_consolability">Panatag/Kalmado</string>
+    <string name="rflacc_score_1_consolability">Napapanatag ang loob sa pamamagitan ng paminsan-minsang paghawak, pagyakap o pakikipag-usap, o maaaring pagkagambala</string>
+    <string name="rflacc_score_2_consolability">Mahirap aliwin; <b>itinutulak palayo ang tagapag-alaga, nilalabanan ang mga hakbang sa pangangalaga/pag-aliw</b></string>
+    <string name="pain_location">Lokasyon ng Sakit</string>
+    <string name="pain_location_desc">Pindutin ang diagram ng katawan kung saan nakakaramdam ng sakit ang bata. Maaari kang magdagdag ng higit sa isang lokasyon.</string>
+    <string name="pain_location_front">Harap</string>
+    <string name="pain_location_back">Likod</string>
+    <string name="selected_locations">Mga Napiling Lokasyon: %1$s</string>
+    <string name="observations">Mga Obserbasyon</string>
+    <string name="observations_desc">"Isulat ang iba pang napansin mo tungkol sa kondisyon ng bata.\\n\\nHalimbawa: pag-uugali, sintomas, atpb. (Opsyonal) "</string>
+    <string name="notes_observations">Mga Tala at Obserbasyon</string>
+    <string name="enter_observation_here">Ilagay dito ang mga tala at obserbasyon…</string>
+    <string name="observations_examples">
+        Mga Halimbawa ng Pwedeng Isulat
+        \n\n&#160;&#8226;&#160;&#160;Ano ang napansin mo sa kilos o asal ng bata?
+        \n&#160;&#8226;&#160;&#160;Mayroon bang iba pang sintomas? (hal. lagnat, pagsusuka, ubo)
+        \n&#160;&#8226;&#160;&#160;Kailan nagsimula ang karamdaman?
+        \n&#160;&#8226;&#160;&#160;May nangyari ba bago ang pinsala? (hal. nadapa, nabangga)
+        \n&#160;&#8226;&#160;&#160;Ano ang ginawa mo para pakalmahin ang bata?
+    </string>
+    <string name="assessment_finished">Ang Assessment ay tapos na.</string>
+    <string name="what_can_you_do">Ano Ang Pwedeng Gawin?</string>
+    <string name="interventions_level_0">
+        &#160;&#8226;&#160;&#160;Ipagpatuloy ang normal na pagkain, tulog, at laro.
+        \n&#160;&#8226;&#160;&#160;Bigyan ng papuri o yakap kapag maayos ang bata.
+        \n&#160;&#8226;&#160;&#160;Obserbahan at itala ang normal na kilos ng bata.
+    </string>
+    <string name="interventions_level_1">
+        &#160;&#8226;&#160;&#160;Maglaro o magbasa ng libro, gumamit ng bula o video para idistrak ang bata.
+        \n&#160;&#8226;&#160;&#160;Ayusin ang posisyon ng bata, gumamit ng unan para mas komportable.
+        \n&#160;&#8226;&#160;&#160;Patugtugin ang kalmadong musika o white noise; hawakan o haplusin ang kamay ng bata.
+        \n&#160;&#8226;&#160;&#160;Manatiling kalmado at kausapin ang bata nang mahinahon.
+    </string>
+    <string name="interventions_level_2">
+        &#160;&#8226;&#160;&#160;Para sa sanggol: kangaroo care o swaddling.
+        \n&#160;&#8226;&#160;&#160;Para sa mas matatanda: huminga nang malalim o “blow away the pain,” o maglaro para mailihis ang atensyon.
+        \n&#160;&#8226;&#160;&#160;Gamitin ang mainit na compress para sa masikip na kalamnan o malamig kung may pamamaga.
+        \n&#160;&#8226;&#160;&#160;Patayin o paliitin ang ilaw at bawasan ang ingay.
+        \n&#160;&#8226;&#160;&#160;Manatiling kalmado at kausapin nang mahinahon.
+    </string>
+    <string name="interventions_level_3">
+        &#160;&#8226;&#160;&#160;Manatili sa linya ng paningin ng bata at magsalita nang mahinahon.
+        \n&#160;&#8226;&#160;&#160;Banayad na pagyugyog o pag-uga para makalma ang bata.
+        \n&#160;&#8226;&#160;&#160;Magkwento o mag-imagine ng paboritong lugar para mailihis ang atensyon.
+        \n&#160;&#8226;&#160;&#160;Siguraduhing ligtas ang bata; pigilan ang self-harm.
+        \n&#160;&#8226;&#160;&#160;Tawagan agad ang doktor o nurse kung hindi bumababa ang sakit.
+    </string>
+    <string name="assessment_saved">Nai-save na ang assessment.</string>
+    <string name="assessment_history">Mga Nakaraang Assessment</string>
+    <string name="reset_button">I-Reset</string>
+    <string name="reset_selection">I-Reset ang Seleksyon</string>
+    <string name="reset_selection_prompt">I-reset ang seleksyon?</string>
+    <string name="reset_cancelled">Hindi nag-reset ang seleksyon.</string>
+    <string name="reset_selection_success">Ang seleksyon ay nai-reset.</string>
+    <string name="reset_selection_empty">Di maka-reset, ang seleksyon ay wala pang laman</string>
+    <string name="save_summary_title">I-Save ang Assessment</string>
+    <string name="save_summary_prompt">I-save ang assesment?</string>
+    <string name="edit_password">Baguhin ang Password</string>
+    <string name="delete_account">I-Delete ang Account</string>
+    <string name="logout_confirmation">Sigurado bang mag-log out?</string>
+    <string name="logout_cancel">Hindi nag-log out.</string>
+    <string name="change_password_old">Lumang Password <font color="#FF0000">*</font></string>
+    <string name="change_password_new">Bagong Password <font color="#FF0000">*</font></string>
+    <string name="change_password_new_confirm">Kumpirmahin ang Bagong Password <font color="#FF0000">*</font></string>
+    <string name="change_password_old_hint">Lumang Password</string>
+    <string name="change_password_new_hint">Bagong Password</string>
+    <string name="change_password_new_confirm_hint">Kumpirmahin ang Bagong Password</string>
+    <string name="confirm_sign_up_password">Kumpirmahin ang iyong password.</string>
+    <string name="signup_cancel">Hindi nagawa ang account.</string>
+    <string name="passwords_do_not_match">Hindi nagtutugma ang mga password.</string>
+    <string name="user_exists">Mayroon nang user na may kaparehong username</string>
+    <string name="preliminary">Preliminaryo</string>
+    <string name="awake_children">Para sa mga batang gising:</string>
+    <string name="awake_children_desc">Obserbahan nang hindi bababa sa 1-2 minuto. Obserbahan ang mga binti at katawan nang walang takip. Ibalik ang posisyon ng pasyente o obserbahan ang aktibidad, suriin ang katawan sa tensyon. Simulan ang mga pang-aliw na interbensyon kung kinakailangan.</string>
+    <string name="asleep_children">Para sa mga batang natutulog:</string>
+    <string name="asleep_children_desc">Obserbahan nang hindi bababa sa 2 minuto. Obserbahan ang mga binti at katawan nang walang takip. Kung maaari, ilipat ang posisyon ng pasyente. Hawakan ang katawan at suriin ang tensyon.</string>
+    <string name="preliminary_end">Maaaring gamitin ang binagong FLACC para sa lahat ng mga batang hindi nagsasalita. Ang mga karagdagang deskriptor/paglalarawan (naka-italiko) ay ang deskriptor na napatunayan sa mga batang may kapansanan sa pag-iisip. Maaaring repasuhin ng nars kasama ang mga magulang/tagapag-alaga kung may mga karagdagang pag-uugali na mas mahusay na indikasyon ng kanilang anak na nakakaranas ng sakit. Idagdag ang mga pag-uugaling ito bilang kasangkapan na naaangkop sa mga ginamit na kategorya.</string>
+    <string name="language">Wika</string>
+    <string name="language_sysdefault">Gamitin ang system default</string>
+    <string name="language_english">Ingles</string>
+    <string name="language_filipino">Filipino</string>
+    <string name="language_change">Pagbago ng Wika</string>
+    <string name="language_change_desc">Ang pagbago ng wika ng app ay nangangailangan ng app restart. Ipagpatuloy?</string>
+    <string name="language_change_cancel">Hindi pinalitan ang wika.</string>
+    <string name="play_sound">I-Play ang Instruksyon</string>
+    <string name="audio_not_playable">Di mai-play ang audio.</string>
+    <string name="audio_play">Nagpe-play ng instruction audio...</string>
+    <string name="delete_account_confirm">Sigurado bang i-delete ang iyong account? Hindi mababawi ang aksyon na ito!</string>
+    <string name="delete_account_cancel">Hindi nag-delete ng account.</string>
+    <string name="unsaved_changes_prompt">Sigurado bang mag-exit nang di nag-save?</string>
+    <string name="narration_enable_all">I-enable ang mga narration sa Filipino kahit hindi Filipino ang wika</string>
+    <string name="settings_saved">Nai-save ang settings.</string>
+    <string name="password_change_success">Napalitan na ang password</string>
+    <string name="delete_profile">I-Delete ang Profile</string>
+    <string name="edit_profile">I-Edit ang Profile</string>
+    <string name="delete_profile_confirm">Sigurado bang i-delete ang profile na ito? Hindi mababawi ang aksyon na ito!</string>
+    <string name="profile_remove_success">Nai-delete na ang user profile.</string>
+    <string name="delete_profile_cancel">Hindi nag-delete ng profile.</string>
+    <string name="profile_not_exists">Hindi nag-eexist ang profile na ito.</string>
+    <string name="profile_edit_success">Nai-update ang profile.</string>
+    <string name="assessment_datetime">Petsa at Oras ng Assessment</string>
+    <string name="assessment_not_exists">Hindi nag-eexist ang assessment na ito.</string>
+    <string name="print">I-Print</string>
+    <string name="pain_trends">Pain Trends (Nakaraang 7 Araw)</string>
+</resources>

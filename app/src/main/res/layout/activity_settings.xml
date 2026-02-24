@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".activity.SettingsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <include layout="@layout/toolbar_center_title" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/layout_bg"
+                android:orientation="vertical"
+                android:padding="15dp"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:id="@+id/accountDisplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:fontFamily="@font/frutiger_bold"
+                    android:text="@string/settings_account"
+                    android:textColor="@color/element_font"
+                    android:textSize="18sp" />
+                <Button
+                    android:id="@+id/editPassword"
+                    android:minHeight="40sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/frutiger_bold"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/btn_tint"
+                    android:text="@string/edit_password" />
+                <Button
+                    android:id="@+id/logoutBtn"
+                    android:minHeight="40sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/frutiger_bold"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/btn_tint"
+                    android:text="@string/log_out" />
+                <Button
+                    android:id="@+id/deleteAccountBtn"
+                    android:minHeight="40sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/frutiger_bold"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/element_font_danger"
+                    android:text="@string/delete_account" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/layout_bg"
+                android:orientation="vertical"
+                android:padding="15dp"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:fontFamily="@font/frutiger_bold"
+                    android:text="@string/language"
+                    android:textColor="@color/element_font"
+                    android:textSize="18sp" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/systemDefaultRadioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/element_font"
+                        android:fontFamily="@font/frutiger"
+                        android:text="@string/language_sysdefault"
+                        android:textColor="@color/darkgray"
+                        tools:checked="true" />
+
+                    <RadioButton
+                        android:id="@+id/englishRadioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/element_font"
+                        android:fontFamily="@font/frutiger"
+                        android:text="@string/language_english"
+                        android:textColor="@color/darkgray"  />
+                    <RadioButton
+                        android:id="@+id/filipinoRadioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/element_font"
+                        android:fontFamily="@font/frutiger"
+                        android:text="@string/language_filipino"
+                        android:textColor="@color/darkgray"  />
+                    <Button
+                        android:id="@+id/saveLanguageBtn"
+                        android:minHeight="40sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/frutiger_bold"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/btn_tint"
+                        android:text="@string/btn_save" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/layout_bg"
+                android:orientation="vertical"
+                android:padding="15dp"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:fontFamily="@font/frutiger_bold"
+                    android:text="@string/settings_narration"
+                    android:textColor="@color/element_font"
+                    android:textSize="18sp" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/forcedNarrationsCheckbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/frutiger"
+                        android:text="@string/narration_enable_all"
+                        android:textColor="@color/darkgray"
+                        tools:checked="true" />
+                </RadioGroup>
+                <Button
+                    android:id="@+id/saveNarrationBtn"
+                    android:minHeight="40sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/frutiger_bold"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/btn_tint"
+                    android:text="@string/btn_save" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
