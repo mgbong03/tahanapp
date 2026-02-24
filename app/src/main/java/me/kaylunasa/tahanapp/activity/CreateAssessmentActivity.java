@@ -217,6 +217,7 @@ public class CreateAssessmentActivity extends TahanAppActivity {
         transaction.addToBackStack(null);
         transaction.commit();
 
+        getSupportFragmentManager().executePendingTransactions();
         invalidateMenu();
 
         updateToolbarTitle(fragment);
