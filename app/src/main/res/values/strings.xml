@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name" translatable="false">TahanApp</string>
     <string name="app_desc" translatable="false">Pain Assessment for Non-Verbal Children with ASD</string>
-    <string name="version_number" translatable="false">Version alpha-0.1.2</string>
+    <string name="version_format" translatable="false">Version %1$s</string>
 
     <string name="login" translatable="false">Log In</string>
     <string name="input_username" translatable="false">Username</string>
