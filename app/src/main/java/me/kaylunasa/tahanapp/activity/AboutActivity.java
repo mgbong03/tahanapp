@@ -7,13 +7,13 @@ import android.view.View;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import me.kaylunasa.tahanapp.BuildConfig;
 import me.kaylunasa.tahanapp.R;
 
 public class AboutActivity extends TahanAppActivity {
@@ -45,6 +45,12 @@ public class AboutActivity extends TahanAppActivity {
             if (toolbar.getNavigationIcon() != null)
                 toolbar.getNavigationIcon().setTint(ContextCompat.getColor(this, R.color.black));
         }
+
+        TextView versionNumberView = findViewById(R.id.versionNumberDisplay);
+        versionNumberView.setText(String.format(
+                getResources().getText(R.string.version_format).toString(),
+                BuildConfig.VERSION_NAME
+        ));
 
         View cnphView = findViewById(R.id.contact_cnph);
         cnphView.setOnClickListener((v) -> {

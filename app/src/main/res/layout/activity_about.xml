@@ -75,10 +75,11 @@
                     android:textColor="@color/darkgray" />
 
                 <TextView
+                    android:id="@+id/versionNumberDisplay"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/frutiger"
-                    android:text="@string/version_number"
+                    android:text="@string/version_format"
                     android:textAlignment="center"
                     android:textColor="@color/gray" />
             </LinearLayout>
