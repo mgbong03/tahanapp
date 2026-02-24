@@ -42,6 +42,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 tools:text="N years old"
+                android:textSize="13sp"
+                android:textColor="@color/darkgray"
+                android:fontFamily="@font/frutiger_light"/>
+            <TextView
+                android:id="@+id/lastAssessment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Last Assessment: %1$s"
+                android:textSize="13sp"
                 android:textColor="@color/darkgray"
                 android:fontFamily="@font/frutiger_light"/>
         </LinearLayout>
