@@ -50,7 +50,7 @@
                 android:id="@+id/lastAssessment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:drawablePadding="10sp"
+                android:drawablePadding="5sp"
                 android:text="@string/last_assessment_format"
                 android:gravity="center_vertical"
                 android:textSize="13sp"
