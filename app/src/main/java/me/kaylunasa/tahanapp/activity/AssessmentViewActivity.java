@@ -242,7 +242,10 @@ public class AssessmentViewActivity extends TahanAppActivity {
     }
 
     @SuppressLint("SetJavaScriptEnabled")
-    private void printForm(String language) {
+    private void printForm(Locale locale) {
+        String language = locale.getLanguage();
+        Log.d(TAG, "printForm: locale is " + language);
+
         Toast.makeText(this, getResources().getText(R.string.print_started), Toast.LENGTH_SHORT).show();
         WebView webView = new WebView(this);
         webView.getSettings().setJavaScriptEnabled(true);
@@ -325,11 +328,6 @@ public class AssessmentViewActivity extends TahanAppActivity {
         webView.evaluateJavascript(js, value -> {});
     }
 
-    @SuppressLint("SetJavaScriptEnabled")
-    private void printForm(Locale locale) {
-        printForm(locale.getLanguage());
-    }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_printable, menu);
@@ -342,7 +340,7 @@ public class AssessmentViewActivity extends TahanAppActivity {
         if (id == R.id.menu_print) {
             String language = SettingsDataManager.getLanguage(this);
             if (language != null)
-                printForm(language);
+                printForm(Locale.forLanguageTag(language));
             else
                 printForm(Locale.getDefault());
             return true;
