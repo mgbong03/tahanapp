@@ -15,8 +15,8 @@ android {
         applicationId = "me.kaylunasa.tahanapp"
         minSdk = 24
         targetSdk = 36
-        versionCode = 3
-        versionName = "alpha-v0.1.2"
+        versionCode = 4
+        versionName = "alpha-v0.2.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
