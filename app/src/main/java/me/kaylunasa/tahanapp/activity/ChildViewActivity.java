@@ -143,6 +143,9 @@ public class ChildViewActivity extends TahanAppActivity {
                                     user.toJsonData()
                             );
                             Toast.makeText(this, getResources().getText(R.string.assessment_saved), Toast.LENGTH_SHORT).show();
+
+                            // todo prompt user if they want to be notified after 8 hours
+
                             recreate();
                         }
                         catch (IllegalStateException | JSONException e) {
