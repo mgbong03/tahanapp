@@ -1,6 +1,7 @@
 package me.kaylunasa.tahanapp.activity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -13,14 +14,14 @@ import androidx.core.view.WindowInsetsCompat;
 
 import me.kaylunasa.tahanapp.R;
 
-public class AsdActivity extends TahanAppActivity {
-    private static final String TAG = AsdActivity.class.getSimpleName();
+public class LearningHubModule4Activity extends TahanAppActivity {
+    private static final String TAG = LearningHubModule4Activity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_asd);
+        setContentView(R.layout.activity_learning_hub_module_4);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -45,28 +46,10 @@ public class AsdActivity extends TahanAppActivity {
                 toolbar.getNavigationIcon().setTint(ContextCompat.getColor(this, R.color.black));
         }
 
-        findViewById(R.id.asdModule1).setOnClickListener((v) -> {
-            Intent intent = new Intent(this, LearningHubModule1Activity.class);
-            startActivity(intent);
-        });
-        findViewById(R.id.asdModule2).setOnClickListener((v) -> {
-            Intent intent = new Intent(this, LearningHubModule2Activity.class);
-            startActivity(intent);
-        });
-        findViewById(R.id.asdModule3).setOnClickListener((v) -> {
-            Intent intent = new Intent(this, LearningHubModule3Activity.class);
-            startActivity(intent);
-        });
-        findViewById(R.id.asdModule4).setOnClickListener((v) -> {
-            Intent intent = new Intent(this, LearningHubModule4Activity.class);
-            startActivity(intent);
-        });
-        findViewById(R.id.asdModule5).setOnClickListener((v) -> {
-            Intent intent = new Intent(this, LearningHubModule5Activity.class);
-            startActivity(intent);
-        });
-        findViewById(R.id.asdModule6).setOnClickListener((v) -> {
-            Intent intent = new Intent(this, LearningHubModule6Activity.class);
+        findViewById(R.id.url_autismPh).setOnClickListener((v) -> {
+            String url = getResources().getText(R.string.lhub_m3_s5_d2_url).toString();
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse(url));
             startActivity(intent);
         });
     }

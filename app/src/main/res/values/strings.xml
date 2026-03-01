@@ -31,7 +31,7 @@
     <string name="notice_title">Notice</string>
     <string name="username_too_short">Username must be at least 4 characters long</string>
     <string name="username_wrong_format">Username may only contain alphanumeric characters or underscores</string>
-    <string name="password_too_short">Password must be at least 4 characters long</string>
+    <string name="password_too_short">Password must be at least 8 characters long</string>
     <string name="logged_out_force">You have been logged out. Please log in again.</string>
     <string name="username_not_exists">Username does not exist</string>
     <string name="invalid_password">Invalid password</string>
@@ -54,7 +54,7 @@
     <string name="profile_name_exists">A profile with this name already exists</string>
     <string name="profile_add_success">Profile successfully added</string>
     <string name="profile_name_too_long">Profile name must have a maximum of 50 characters</string>
-    <string name="asd_desc">Autism Spectrum Disorder (ASD) is a developmental condition that affects a person’s social interaction, communication, and behavior. Its effects vary from one individual to another, which is why it is referred to as a “spectrum.”</string>
+    <string name="asd_desc">Autism Spectrum Disorder (ASD) is a developmental condition that affects a person\'s social interaction, communication, and behavior. Its effects vary from one individual to another, which is why it is referred to as a “spectrum.”</string>
     <string name="level_1">Level 1</string>
     <string name="level_2">Level 2</string>
     <string name="level_3">Level 3</string>
@@ -202,7 +202,7 @@
     <string name="pain_location_back">Back</string>
     <string name="selected_locations">Selected Locations: %1$s</string>
     <string name="observations">Observations</string>
-    <string name="observations_desc">Write down anything else you have noticed about the child\'s condition.\\n\\nFor example: behavior, symptoms, etc. (Optional)</string>
+    <string name="observations_desc">Write down anything else you have noticed about the child\'s condition.\n\nFor example: behavior, symptoms, etc. (Optional)</string>
     <string name="notes_observations">Notes and Observations</string>
     <string name="enter_observation_here">Enter notes and observations here…</string>
     <string name="observations_examples">
@@ -239,7 +239,7 @@
         \n&#160;&#8226;&#160;&#160;Gently rock or shake the child to calm them down.
         \n&#160;&#8226;&#160;&#160;Tell stories or imagine their favorite place to distract them.
         \n&#160;&#8226;&#160;&#160;Ensure the child\'s safety; prevent self-harm.
-        \n&#160;&#8226;&#160;&#160;Call the doctor or nurse immediately if the pain doesn’t decrease.
+        \n&#160;&#8226;&#160;&#160;Call the doctor or nurse immediately if the pain doesn\'t decrease.
     </string>
     <string name="assessment_summary" translatable="false">Assessment Summary</string>
     <string name="assessment_saved">Successfully saved assessment.</string>
@@ -307,4 +307,330 @@
     <string name="pain_trends">Pain Trends (Past 7 Days)</string>
     <string name="last_assessment_format">Last Assessment: %1$s</string>
     <string name="never_assessed">Never</string>
+
+    <string name="learning_hub_title" translatable="false">ASD Learning Hub</string>
+    <string name="learning_hub_module_1">Module 1: What is Autism?</string>
+    <string name="learning_hub_module_2">Module 2: Signs of Autism in Children</string>
+    <string name="learning_hub_module_3">Module 3: Things That Can Help for Those Newly Diagnosed with Autism</string>
+    <string name="learning_hub_module_4">Module 4: Autism and Daily Life</string>
+    <string name="learning_hub_module_5">Module 5: Where to Get Support for Autism</string>
+    <string name="learning_hub_module_6">Module 6: Easy-to-Read Information and Videos about Autism</string>
+
+    <string name="lhub_m1_s0_d1">
+        Autism is a condition in which a person may behave, think, and feel things in ways that are different from others.
+        \n\nPeople with autism may:
+        \n&#160;&#8226;&#160;&#160;have difficulty communicating and interacting with other people
+        \n&#160;&#8226;&#160;&#160;have difficulty understanding what others are thinking or feeling
+        \n&#160;&#8226;&#160;&#160;feel extremely overwhelmed, stressed, or uncomfortable in bright lights or loud sounds
+        \n&#160;&#8226;&#160;&#160;feel anxious or upset in new situations or social activities
+        \n&#160;&#8226;&#160;&#160;need more time to understand information
+        \n&#160;&#8226;&#160;&#160;repeatedly do or think about the same things
+    </string>
+    <string name="lhub_m1_s1">Autism is Not a Disease</string>
+    <string name="lhub_m1_s1_d1">
+        Autism is not an illness or a disease. Being autistic does not mean that you are sick; it simply means that your brain works differently from other people\'s.
+        \n\nIt is a condition that a person is born with. Signs of autism may be noticed during childhood, or sometimes only recognized later in life.
+        \n\nAutism is not a medical condition that has a treatment or \"cure\". However, some autistic individuals may need support to help them in certain aspects of their daily lives.
+    </string>
+    <string name="lhub_m1_s2">People with Autism Can Live Full and Happy Lives</string>
+    <string name="lhub_m1_s2_d1">
+        Being autistic is not a barrier to having a meaningful and happy life.
+        \n\nLike everyone else, people with autism have things they are good at and things they may find challenging.
+        \n\nBeing autistic does not mean you cannot have friends, relationships, or a job. However, youmay need additional support or assistance in these areas.
+    </string>
+    <string name="lhub_m1_s3">Autism is Different for Every Person</string>
+    <string name="lhub_m1_s3_d1">
+        Autism is a spectrum, which means that each person with autism has different experiences and abilities.
+        \n\nSome autistic individuals need little to no support, while others may require daily assistance from parents or caregivers.
+    </string>
+    <string name="lhub_m1_s4">Other Terms for Autism</string>
+    <string name="lhub_m1_s4_d1">
+        Some people use different terms to refer to autism, such as:
+        \n&#160;&#8226;&#160;&#160;Autism Spectrum Disorder (ASD) – the medical term used to describe autism.
+        \n&#160;&#8226;&#160;&#160;Asperger\'s (or Asperger Syndrome) – a term some people use to describe autistic individuals who have average or above-average levels of intelligence.
+    </string>
+    <string name="lhub_m1_s5">The Exact Cause of Autism Is Not Yet Fully Known</string>
+    <string name="lhub_m1_s5_d1">
+        It is not yet certain what truly causes autism, or whether there is a single cause.
+        \n\nAutism can sometimes be seen among family members, which suggests that it may, in some cases, be passed down from parents to children.
+        \n\nAutism is:
+        \n&#160;&#8226;&#160;&#160;not caused by poor upbringing or bad parenting
+        \n&#160;&#8226;&#160;&#160;not caused by vaccines, such as the MMR vaccine
+        \n&#160;&#8226;&#160;&#160; not linked to food or diet
+        \n&#160;&#8226;&#160;&#160;not an infection that can be passed on to other people
+    </string>
+    <string name="lhub_m1_s6">People with Autism May Have Different Levels of Intelligence</string>
+    <string name="lhub_m1_s6_d1">
+        Some autistic individuals have average or even above-average intelligence.
+        \n\nOthers may have a learning disability. This means they may have difficulty taking care of themselves and may need help with daily activities.
+    </string>
+    <string name="lhub_m1_s7">People with Autism May Also Have Other Conditions</string>
+    <string name="lhub_m1_s7_d1">
+        Autistic individuals may also have other conditions, such as:
+        \n&#160;&#8226;&#160;&#160;Attention Deficit Hyperactivity Disorder (ADHD)
+        \n&#160;&#8226;&#160;&#160;Dyslexia
+        \n&#160;&#8226;&#160;&#160;Anxiety
+        \n&#160;&#8226;&#160;&#160;Depression
+        \n&#160;&#8226;&#160;&#160;Epilepsy
+    </string>
+
+    <string name="lhub_m2_s1">Autism in Children</string>
+    <string name="lhub_m2_s1_d1">
+        Signs of autism in young children may include:
+        \n&#160;&#8226;&#160;&#160;not responding when their name is called
+        \n&#160;&#8226;&#160;&#160;avoiding eye contact or not looking directly at the person speaking to them
+        \n&#160;&#8226;&#160;&#160;not smiling back when someone smiles at them
+        \n&#160;&#8226;&#160;&#160;becoming easily upset by certain tastes, smells, or sounds
+        \n&#160;&#8226;&#160;&#160;repetitive movements such as hand flapping, finger flicking, or rocking their body
+        \n&#160;&#8226;&#160;&#160;speaking less than other children their age
+        \n&#160;&#8226;&#160;&#160;little to no pretend play (make-believe play)
+        \n&#160;&#8226;&#160;&#160;repeating the same words or phrases over and over
+    </string>
+    <string name="lhub_m2_s2">Autism in Older Children</string>
+    <string name="lhub_m2_s2_d1">
+        Signs of autism in older children may include:
+        \n&#160;&#8226;&#160;&#160;seeming to have difficulty understanding what others think or feel
+        \n&#160;&#8226;&#160;&#160;speaking in unusual ways, such as repeating phrases or talking without engaging in back-and-forth conversation
+        \n&#160;&#8226;&#160;&#160;preferring strict daily routines and becoming very upset or anxious when these routines change
+        \n&#160;&#8226;&#160;&#160;having intense interest in specific topics or activities
+        \n&#160;&#8226;&#160;&#160;becoming easily upset when told to do something
+        \n&#160;&#8226;&#160;&#160;having difficulty making friends or preferring to be alone
+        \n&#160;&#8226;&#160;&#160;understanding language very literally (for example, not understanding idioms like “break a leg”)
+        \n&#160;&#8226;&#160;&#160;having difficulty expressing their own feelings
+    </string>
+    <string name="lhub_m2_s3">Autism in Females and Males</string>
+    <string name="lhub_m2_s3_d1">
+        Sometimes autism presents differently in females and males.
+        \n\nAutistic females may:
+        \n&#160;&#8226;&#160;&#160;mask some signs of autism by imitating the actions and play of other children
+        \n&#160;&#8226;&#160;&#160;avoid or stay quiet in situations they find challenging
+        \n&#160;&#8226;&#160;&#160;appear to handle social situations better
+        \n&#160;&#8226;&#160;&#160;show fewer repetitive behaviors
+        \n\nBecause of this, autism can sometimes be harder to notice or identify in females.
+    </string>
+    <string name="lhub_m2_s4">Important Reminder</string>
+    <string name="lhub_m2_s4_d1">
+        The signs mentioned are not enough to self-diagnose. Many children may show some of these behaviors but that does not necessarily mean they have autism.
+        \n\nDo not attempt to diagnose on your own.
+        \n\nIf you notice concerning signs, it is important to consult a licensed doctor, such as a pediatrician, developmental pediatrician, or child psychiatrist, for proper assessment and guidance.
+        \n\nEarly recognition and intervention are crucial to support the child\'s development
+    </string>
+
+    <string name="lhub_m3_s1">Give Yourself Time</string>
+    <string name="lhub_m3_s1_d1">
+        People react differently to an autism diagnosis.
+        \n\nFor some, it can be a relief to understand why they or their child think, feel, and act in certain ways. For others, it may come as a shock.
+        \n\nTry to give yourself enough time to accept and understand the diagnosis.
+        \n\nRemember:
+        \n&#160;&#8226;&#160;&#160;help and support are available
+        \n&#160;&#8226;&#160;&#160;even if the situation feels difficult now, things can still improve
+        \n&#160;&#8226;&#160;&#160;you or your child remain the same person as before
+        \n&#160;&#8226;&#160;&#160;autism is not a disease or illness that has a treatment or “cure”
+        \n&#160;&#8226;&#160;&#160;autistic individuals have strengths and things they excel at, in addition to areas where they may need support
+    </string>
+    <string name="lhub_m3_s2">Seek Help and Supportive Services</string>
+    <string name="lhub_m3_s2_d1">
+        You may have felt isolated when you or your child were first diagnosed.
+        \n\nHowever, there are places and people you can reach out to for support.
+        \n\nYou can get help from:
+        \n&#160;&#8226;&#160;&#160;local support groups
+        \n&#160;&#8226;&#160;&#160;national charities or organizations that provide assistance
+        \n&#160;&#8226;&#160;&#160;other autistic individuals or parents through social media and forums
+        \n&#160;&#8226;&#160;&#160;your school, college, or workplace
+        \n&#160;&#8226;&#160;&#160;your local government
+        \n&#160;&#8226;&#160;&#160;your GP or the autism assessment team that diagnosed you
+    </string>
+    <string name="lhub_m3_s3">Listen to the Stories of Others</string>
+    <string name="lhub_m3_s3_d1">
+        Some people find it helpful to learn from the experiences of other individuals with autism.
+        \n\nYou can also look for blogs, videos, or books about autism online.
+        \n\nImportant:
+        \n\nRemember that every autistic person\'s experience is different. What happened to someone else may not be the same as what you or your child will experience.
+    </string>
+    <string name="lhub_m3_s4">Watch Out for Other Health Issues</string>
+    <string name="lhub_m3_s4_d1">
+        Autism is not an illness. However, many autistic people have other conditions.
+        \n\nThese may not always be identified during an autism assessment.
+        \n\nConsult your GP if you have any concerns about your health or your child\'s health. They can help you access any additional care you may need.
+    </string>
+    <string name="lhub_m3_s5">Learn More About Autism</string>
+    <string name="lhub_m3_s5_d1">
+        Gaining more knowledge about autism can be helpful for you and your family.
+        \n\nThere is a lot of information available, and it may take time to understand it all. You don\'t need to read everything at once.
+        \n\nYou can access reliable information from:
+    </string>
+    <string name="lhub_m3_s5_d2" translatable="false">Autism Society Philippines</string>
+    <string name="lhub_m3_s5_d2_url" translatable="false">http://www.autismsocietyphilippines.org/</string>
+
+    <string name="lhub_m4_do">Do:</string>
+    <string name="lhub_m4_do_not">Do Not:</string>
+    <string name="lhub_m4_s0_d1">
+        Look for information and advice about living with and caring for a child with autism.
+    </string>
+    <string name="lhub_m4_s1">How to Help Your Autistic Child in Daily Life?</string>
+    <string name="lhub_m4_s2">How to Help Your Child Communicate</string>
+    <string name="lhub_m4_s2_d1">
+        &#160;&#8226;&#160;&#160;Use your child\'s name so they know you are speaking to them
+        \n&#160;&#8226;&#160;&#160;Keep your language simple and clear
+        \n&#160;&#8226;&#160;&#160;Speak slowly and clearly
+        \n&#160;&#8226;&#160;&#160;Use simple gestures, eye contact, and pictures or symbols to support what you are saying
+        \n&#160;&#8226;&#160;&#160;Give your child extra time to understand what you said
+        \n&#160;&#8226;&#160;&#160;Ask the autism assessment team if you can get help from a speech and language therapist (SLT)
+        \n&#160;&#8226;&#160;&#160;Try methods that help them communicate, such as Signalong, Makaton, or PECS
+        \n&#160;&#8226;&#160;&#160;Read tips from the National Autistic Society about communicating with your child
+    </string>
+    <string name="lhub_m4_s2_d2">
+        &#160;&#8226;&#160;&#160;Ask your child too many questions at once
+        \n&#160;&#8226;&#160;&#160;Try to communicate in a noisy or crowded place
+        \n&#160;&#8226;&#160;&#160;Say things that can have more than one meaning, such as “sort yourself out,” “good luck,” or “under the weather” (figurative expressions)
+    </string>
+    <string name="lhub_m4_s3">Dealing with Anxiety</string>
+    <string name="lhub_m4_s3_d1">
+        Anxiety affects many children with autism. It can be caused by not fully understanding what is happening around them, or by feeling misunderstood or not accepted by non-autistic people.
+        \n\nTry to understand why your child feels anxious. It may be due to:
+        \n&#160;&#8226;&#160;&#160;Changes in routine – preparing your child for any changes, such as moving to a new classroom at school, can help
+        \n&#160;&#8226;&#160;&#160;Difficulty identifying, understanding, or managing their emotions
+        \n&#160;&#8226;&#160;&#160;Noisy or overly bright/colorful environments – taking your child to a quieter, calmer space, such as another room, can help
+    </string>
+    <string name="lhub_m4_s4">Helping Your Child\'s Behavior</string>
+    <string name="lhub_m4_s4_d1">
+        Some children with autism may display behaviors such as:
+        \n&#160;&#8226;&#160;&#160;Stimming – a type of repetitive movement (for example, hand flapping or finger flicking)
+        \n&#160;&#8226;&#160;&#160;Meltdowns – a complete loss of control due to being overwhelmed or experiencing intense emotions
+        \n\nIf your child shows these behaviors, read the following advice on how to support and manage your child\'s behavior.
+    </string>
+    <string name="lhub_m4_s5">Feeding Challenges</string>
+    <string name="lhub_m4_s5_d1">
+        Many children are picky eaters.
+        \n\nChildren with autism may:
+        \n&#160;&#8226;&#160;&#160;eat only foods of certain colors or textures
+        \n&#160;&#8226;&#160;&#160;eat too little or sometimes too much
+        \n&#160;&#8226;&#160;&#160;eat non-food items (called pica)
+        \n&#160;&#8226;&#160;&#160;have trouble choking or gagging while eating
+        \n&#160;&#8226;&#160;&#160;experience constipation, making them feel full even after eating very little
+        \n\nKeeping a food diary—recording what, where, and when your child eats—can help you notice patterns and common challenges your child may experience.
+    </string>
+    <string name="lhub_m4_s6">Sleep Problems</string>
+    <string name="lhub_m4_s6_d1">
+        Many children with autism have difficulty falling asleep or may wake up several times during the night.
+        \n\nThis may be due to:
+        \n&#160;&#8226;&#160;&#160;Anxiety
+        \n&#160;&#8226;&#160;&#160;Sensitivity to light from smartphones or tablets
+        \n&#160;&#8226;&#160;&#160;Problems with the sleep hormone melatonin
+        \n&#160;&#8226;&#160;&#160;Other issues such as hyperactivity or health conditions that affect sleep
+        \n\nYou can help your child by:
+        \n&#160;&#8226;&#160;&#160;Keeping a sleep diary to track patterns and common challenges
+        \n&#160;&#8226;&#160;&#160;Following a consistent bedtime routine
+        \n&#160;&#8226;&#160;&#160;Ensuring their bedroom is dark and quiet
+        \n&#160;&#8226;&#160;&#160;Having them wear ear plugs if this helps
+        \n&#160;&#8226;&#160;&#160;Talking to a doctor (GP) about managing health conditions that interfere with sleep, such as food sensitivities or breathing problems
+        \n\nIf these strategies do not help, contact your autism team to create a sleep plan that supports your child’s rest.
+        \n\nIf your child’s sleep still does not improve, your GP may refer you to a pediatrician or child psychiatrist experienced with autism.
+    </string>
+    <string name="lhub_m4_s7">Friendship and Social Interaction</string>
+    <string name="lhub_m4_s7_d1">
+        Some children with autism may find it difficult to make friends.
+        \n\nHere are things you can do to help:
+    </string>
+    <string name="lhub_m4_s7_d2">
+        &#160;&#8226;&#160;&#160;Seek ideas from other parents through autism forums and local support groups
+        \n&#160;&#8226;&#160;&#160;Ask your child’s school how they can provide support
+        \n&#160;&#8226;&#160;&#160;Consult your autism team on how to help your child communicate and interact with others
+        \n&#160;&#8226;&#160;&#160;Look in the National Autistic Society directory for local autism-friendly social groups
+        \n&#160;&#8226;&#160;&#160;Read additional advice about friendship from the National Autistic Society
+    </string>
+    <string name="lhub_m4_s7_d3">
+        &#160;&#8226;&#160;&#160;Put too much pressure on your child – learning social skills takes time
+        \n&#160;&#8226;&#160;&#160;Force your child into social situations if they are comfortable being alone
+    </string>
+
+    <string name="lhub_m5_s1">Friends and Family</string>
+    <string name="lhub_m5_s1_d1">
+        Sharing your autism diagnosis—or your child’s—with people close to you can help them better understand how to support you.
+        \n\nThey can assist with:
+        \n&#160;&#8226;&#160;&#160;Daily tasks to give you more time to focus on yourself or your child
+        \n&#160;&#8226;&#160;&#160;Providing emotional support
+    </string>
+    <string name="lhub_m5_s2">National Charities and Support Networks</string>
+    <string name="lhub_m5_s2_d1" translatable="false">
+        Autism Society Philippines
+    </string>
+    <string name="lhub_m5_s2_d2">
+        For autistic children and youth, as well as their parents and caregivers.
+    </string>
+    <string name="lhub_m5_s2_d3">Phone</string>
+    <string name="lhub_m5_s2_d3_data" translatable="false">+63 917 885 7776</string>
+    <string name="lhub_m5_s2_d4">Email</string>
+    <string name="lhub_m5_s2_d4_data" translatable="false">info@autismsocietyphilippines.org</string>
+    <string name="lhub_m5_s2_d5">Website</string>
+    <string name="lhub_m5_s2_d5_data" translatable="false">http://www.autismsocietyphilippines.org</string>
+    <string name="lhub_m5_s3">Local Support Groups</string>
+    <string name="lhub_m5_s3_d1">
+        The assessment team that diagnosed you or your child should provide information about local support groups.
+        \n\nYou can also find local groups through:
+    </string>
+    <string name="lhub_m5_s3_d2" translatable="false"><u>Autism Society Philippines (ASP)</u></string>
+    <string name="lhub_m5_s3_d3">A large non-profit organization for families and individuals with autism, with chapters across the country offering family support groups, seminar series, and referral services.</string>
+    <string name="lhub_m5_s3_d2_uri" translatable="false">http://www.autismsocietyphilippines.org</string>
+    <string name="lhub_m5_s3_d4" translatable="false"><u>Autism Pinoy</u></string>
+    <string name="lhub_m5_s3_d4_uri" translatable="false">https://www.autismpinoy.com/</string>
+    <string name="lhub_m5_s3_d5">A website and online support resource for parents and families of children with autism in the Philippines, offering information, tips, and resource links.</string>
+    <string name="lhub_m5_s4">Social Media and Forums</string>
+    <string name="lhub_m5_s4_d1">
+        Many people with autism share their experiences and provide support through forums and social media.
+        \n&#160;&#8226;&#160;&#160;You don’t need to actively participate; reading their posts can be helpful.
+        \n&#160;&#8226;&#160;&#160;A good place to start is with groups run by autism charities.
+        \n&#160;&#8226;&#160;&#160;Important: NHS does not monitor these sites.
+    </string>
+    <string name="lhub_m5_s4_d2" translatable="false">Autism Center and Speech Development of the Philippines</string>
+    <string name="lhub_m5_s4_d2_uri" translatable="false">https://www.facebook.com/AutismCenterPh/</string>
+    <string name="lhub_m5_s4_d3" translatable="false">Autism Society PH</string>
+    <string name="lhub_m5_s4_d3_uri" translatable="false">https://www.facebook.com/autismphils</string>
+    <string name="lhub_m5_s4_d4">Important Reminder</string>
+    <string name="lhub_m5_s4_d5">
+        Comments on social media and forums are usually based on personal experience and should not be taken as advice guaranteed to help you or your child.
+    </string>
+    <string name="lhub_m5_s5">Your School, College, or Workplace</string>
+    <string name="lhub_m5_s5_d1">
+        You can request support to make things easier for yourself or your child.
+        \n\nCheck what help is available at:
+        \n&#160;&#8226;&#160;&#160;Nursery or school – speak with teachers or the Special Educational Needs Coordinator (SENCO)
+        \n&#160;&#8226;&#160;&#160;College or university – contact student support services
+        \n&#160;&#8226;&#160;&#160;Workplace – talk to your manager and Human Resources (HR)
+    </string>
+    <string name="lhub_m5_s6">Your Local Council</string>
+    <string name="lhub_m5_s6_d1">
+        You may be able to access support and financial benefits from your local council.
+        \n\nThe type of help available depends on your situation.
+    </string>
+
+    <string name="lhub_m6_s0_d1">
+        There are easy-to-read materials and videos that can help in understanding autism.
+        \n\nThese can be used by parents, caregivers, or even autistic children to better understand autism and how it may affect daily life.
+    </string>
+    <string name="lhub_m6_s1" translatable="false">Autism Society Philippines (ASP) Website</string>
+    <string name="lhub_m6_s1_url" translatable="false">http://www.autismsocietyphilippines.org/</string>
+    <string name="lhub_m6_s1_d1">
+        The official website of the <b>Autism Society Philippines (ASP)</b>, a national non-profit supporting autistic individuals and their families. Offers information, advocacy, support groups, seminars, early-intervention programs, and community events.
+    </string>
+    <string name="lhub_m6_s2" translatable="false">Autism Awareness Centre Website</string>
+    <string name="lhub_m6_s2_url" translatable="false">https://autismawarenesscentre.com/resources/autism-society-philippines/</string>
+    <string name="lhub_m6_s2_d1">
+        Provides an overview of the Autism Society Philippines for international audiences, highlighting their role in autism education, awareness, and support.
+    </string>
+    <string name="lhub_m6_s3" translatable="false">Autism Society Philippines (ASP) YouTube</string>
+    <string name="lhub_m6_s3_url" translatable="false">https://www.youtube.com/@autismphils</string>
+    <string name="lhub_m6_s3_d1">
+        The <b>YouTube channel of Autism Society Philippines</b> with videos on awareness activities, personal stories, educational content, and events for parents, caregivers, and autistic individuals.
+    </string>
+    <string name="lhub_m6_s4" translatable="false">Autism Partnership Manila</string>
+    <string name="lhub_m6_s4_url" translatable="false">https://autismpartnershipph.com/en/</string>
+    <string name="lhub_m6_s4_d1">
+        A professional autism support organization offering <b>Applied Behavior Analysis (ABA)</b> therapy and individualized programs to help children with autism develop communication, social, and life skills.
+    </string>
+    <string name="lhub_m6_s5" translatable="false">A Child Can Foundation</string>
+    <string name="lhub_m6_s5_url" translatable="false">https://achildcan.com/</string>
+    <string name="lhub_m6_s5_d1">
+        <b>A Child Can Foundation</b> provides early intervention using ABA therapy for children with autism and developmental delays, focusing on communication, social skills, motor development, and adaptive skills.
+    </string>
 </resources>

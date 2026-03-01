@@ -54,6 +54,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/asdModule1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
@@ -67,7 +68,7 @@
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:layout_marginEnd="10dp"
-                    android:contentDescription="@string/asd_full"
+                    android:contentDescription="@string/learning_hub_module_1"
                     app:srcCompat="@drawable/icon_1" />
 
                 <LinearLayout
@@ -79,19 +80,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/frutiger_bold"
-                        android:text="@string/level_1"
+                        android:textSize="16sp"
+                        android:text="@string/learning_hub_module_1"
+                        android:layout_marginBottom="5sp"
                         android:textColor="@color/element_font" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/frutiger"
-                        android:text="@string/level_1_desc"
-                        android:textColor="@color/darkgray" />
                 </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/asdModule2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
@@ -105,7 +102,7 @@
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:layout_marginEnd="10dp"
-                    android:contentDescription="@string/asd_full"
+                    android:contentDescription="@string/learning_hub_module_2"
                     app:srcCompat="@drawable/icon_2" />
 
                 <LinearLayout
@@ -117,19 +114,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/frutiger_bold"
-                        android:text="@string/level_2"
+                        android:textSize="16sp"
+                        android:text="@string/learning_hub_module_2"
+                        android:layout_marginBottom="5sp"
                         android:textColor="@color/element_font" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/frutiger"
-                        android:text="@string/level_2_desc"
-                        android:textColor="@color/darkgray" />
                 </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/asdModule3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
@@ -143,7 +136,7 @@
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:layout_marginEnd="10dp"
-                    android:contentDescription="@string/asd_full"
+                    android:contentDescription="@string/learning_hub_module_3"
                     app:srcCompat="@drawable/icon_3" />
 
                 <LinearLayout
@@ -155,15 +148,112 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/frutiger_bold"
-                        android:text="@string/level_3"
+                        android:textSize="16sp"
+                        android:text="@string/learning_hub_module_3"
+                        android:layout_marginBottom="5sp"
                         android:textColor="@color/element_font" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/asdModule4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/layout_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="@string/learning_hub_module_4"
+                    app:srcCompat="@drawable/icon_4" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/frutiger"
-                        android:text="@string/level_3_desc"
-                        android:textColor="@color/darkgray" />
+                        android:fontFamily="@font/frutiger_bold"
+                        android:textSize="16sp"
+                        android:text="@string/learning_hub_module_4"
+                        android:layout_marginBottom="5sp"
+                        android:textColor="@color/element_font" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/asdModule5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/layout_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="@string/learning_hub_module_5"
+                    app:srcCompat="@drawable/icon_5" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/frutiger_bold"
+                        android:textSize="16sp"
+                        android:text="@string/learning_hub_module_5"
+                        android:layout_marginBottom="5sp"
+                        android:textColor="@color/element_font" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/asdModule6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/layout_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="@string/learning_hub_module_6"
+                    app:srcCompat="@drawable/icon_6" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/frutiger_bold"
+                        android:textSize="16sp"
+                        android:text="@string/learning_hub_module_6"
+                        android:layout_marginBottom="5sp"
+                        android:textColor="@color/element_font" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -172,6 +262,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/layout_bg"
+                android:backgroundTint="@color/lightinformatic_tint"
+                android:backgroundTintMode="multiply"
                 android:orientation="vertical"
                 android:paddingHorizontal="15dp"
                 android:paddingVertical="10dp">
@@ -179,18 +271,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5sp"
-                    android:fontFamily="@font/frutiger_bold"
-                    android:text="@string/causes_risk_factors"
-                    android:textColor="@color/element_font"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
                     android:fontFamily="@font/frutiger"
-                    android:text="@string/causes_risk_factors_desc"
-                    android:textColor="@color/darkgray" />
+                    android:text="@string/faq_note"
+                    android:textColor="@color/element_font_lightinformatic"
+                    app:drawableStartCompat="@drawable/information_icon_blue_24dp"
+                    android:drawablePadding="10sp"/>
             </LinearLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

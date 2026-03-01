@@ -42,6 +42,24 @@
             android:name=".activity.AsdActivity"
             android:exported="false" />
         <activity
+            android:name=".activity.LearningHubModule1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LearningHubModule2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LearningHubModule3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LearningHubModule4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LearningHubModule5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LearningHubModule6Activity"
+            android:exported="false" />
+        <activity
             android:name=".activity.HomeActivity"
             android:exported="false" />
         <activity

@@ -10,6 +10,8 @@
     <color name="title_shadow">#FF676767</color>
 
     <color name="element_font">#FF5E17EB</color>
+    <color name="element_font_link">#FF0000AA</color>
+    <color name="element_font_positive">#FF006F00</color>
     <color name="element_font_danger">#FFCC0000</color>
     <color name="element_font_warning">#FFCC4E00</color>
     <color name="element_font_lightinformatic">#FF00798E</color>

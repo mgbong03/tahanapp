@@ -51,7 +51,7 @@
     <string name="guide_step_1">Ilagay ang Impormasyon ng Bata</string>
     <string name="guide_step_1_guide">Pindutin ang + na button sa home screen at ilagay ang pangalan at edad ng bata.</string>
     <string name="guide_step_2">Obserbahan ang Bata</string>
-    <string name="guide_step_2_guide">Carefully observe the child\'s movements, facial expressions, and reactions for 5 minutes.</string>
+    <string name="guide_step_2_guide">Maingat na obserbahan ang kilos, mukha, at reaksyon ng bata sa loob ng 5 minuto.</string>
     <string name="guide_step_3">Gamitin ang r-FLACC Scale</string>
     <string name="guide_step_3_guide">Piliin ang score ng sakit para sa bawat kategorya: Mukha, Mga Binti, Aktibiti, Pag-iyak, at Kapanatagan.</string>
     <string name="guide_step_4">Tandaan ang Lokasyon ng Sakit</string>
@@ -158,7 +158,7 @@
     <string name="pain_location_back">Likod</string>
     <string name="selected_locations">Mga Napiling Lokasyon: %1$s</string>
     <string name="observations">Mga Obserbasyon</string>
-    <string name="observations_desc">"Isulat ang iba pang napansin mo tungkol sa kondisyon ng bata.\\n\\nHalimbawa: pag-uugali, sintomas, atpb. (Opsyonal) "</string>
+    <string name="observations_desc">"Isulat ang iba pang napansin mo tungkol sa kondisyon ng bata.\n\nHalimbawa: pag-uugali, sintomas, atpb. (Opsyonal) "</string>
     <string name="notes_observations">Mga Tala at Obserbasyon</string>
     <string name="enter_observation_here">Ilagay dito ang mga tala at obserbasyon…</string>
     <string name="observations_examples">
@@ -255,4 +255,301 @@
     <string name="pain_trends">Pain Trends (Nakaraang 7 Araw)</string>
     <string name="last_assessment_format">Huling Assessment: %1$s</string>
     <string name="never_assessed">Hindi pa</string>
+    <string name="learning_hub_module_1">Modyul 1: Ano ang Autism?</string>
+    <string name="learning_hub_module_2">Modyul 2: Mga senyales ng Autism sa mga Bata</string>
+    <string name="learning_hub_module_3">Modyul 3: Mga Maaaring Makatulong Para sa mga Bagong Na-Diagnose na may Autism</string>
+    <string name="learning_hub_module_4">Modyul 4: Autism at pang-araw-araw na pamumuhay</string>
+    <string name="learning_hub_module_5">Modyul 5: Saan Makakakuha ng Suporta para sa Autism</string>
+    <string name="learning_hub_module_6">Modyul 6: Madaling Basahin na Impormasyon at Video tungkol sa Autism</string>
+
+    <string name="lhub_m1_s0_d1">
+        Autism is a condition in which a person may behave, think, and feel things in ways that are different from others.
+        \n\nAng mga taong may autism ay maaaring:
+        \n&#160;&#8226;&#160;&#160;mahirapang makipag-usap at makipag-interact sa ibang tao
+        \n&#160;&#8226;&#160;&#160;mahirapang maintindihan kung ano ang iniisip o nararamdaman ng ibang tao
+        \n&#160;&#8226;&#160;&#160;makaramdam ng sobrang pagka-overwhelm, stress, o hindi komportable sa maliwanag na ilaw o malalakas na tunog
+        \n&#160;&#8226;&#160;&#160;madaling mabalisa o ma-upset kapag may bagong sitwasyon o social na gawain
+        \n&#160;&#8226;&#160;&#160;nangailangan ng mas mahabang oras para maintindihan ang impormasyon
+        \n&#160;&#8226;&#160;&#160;paulit-ulit na gawin o isipin ang parehong bagay
+    </string>
+    <string name="lhub_m1_s1">Ang Autism ay Hindi Isang Sakit</string>
+    <string name="lhub_m1_s1_d1">
+        Ang autism ay hindi isang karamdaman o sakit. Ang pagiging autistic ay hindi nangangahulugang ikaw ay may sakit; ibig lamang sabihin nito na ang iyong utak ay gumagana sa paraang naiiba kumpara sa ibang tao.
+        Ito ay isang kondisyon na ipinapanganak na kasama ng isang tao. Maaaring mapansin ang mga palatandaan ng autism habang bata pa, o minsan naman ay nakikilala lamang kapag mas matanda na.
+        Ang autism ay hindi isang medikal na kondisyon na may gamutan o "lunas." Gayunpaman, may ilang taong autistic na nangangailangan ng suporta upang matulungan sila sa ilang aspeto ng kanilang pang-araw-araw na buhay.
+    </string>
+    <string name="lhub_m1_s2">Maaaring Mamuhay nang Buo at Masaya ang mga Taong may Autism</string>
+    <string name="lhub_m1_s2_d1">
+        Ang pagiging autistic ay hindi hadlang upang magkaroon ng maayos at masayang buhay.
+        \n\nTulad ng ibang tao, ang mga taong may autism ay may mga bagay na mahusay silang gawin at mayroon ding mga bagay na nahihirapan silang gawin.
+        \n\nAng pagiging autistic ay hindi nangangahulugang hindi ka na maaaring magkaroon ng kaibigan, relasyon, o trabaho. Ngunit maaaring kailanganin ng dagdag na suporta o tulong sa mga aspetong ito.
+    </string>
+    <string name="lhub_m1_s3">Magkakaiba ang Autism sa Bawat Tao</string>
+    <string name="lhub_m1_s3_d1">
+        Ang autism ay isang spectrum, ibig sabihin ay iba-iba ang karanasan at kakayahan ng bawat taong may autism.
+        \n\nMay ilang taong autistic na kaunti lamang o halos walang suportang kailangan, habang ang iba naman ay maaaring mangailangan ng tulong mula sa magulang o tagapag-alaga araw-araw.
+    </string>
+    <string name="lhub_m1_s4">Iba Pang Tawag sa Autism</string>
+    <string name="lhub_m1_s4_d1">
+        May ibang mga terminong ginagamit ng ilang tao upang tukuyin ang autism, tulad ng:
+        \n&#160;&#8226;&#160;&#160;Autism Spectrum Disorder (ASD) – ito ang medikal na tawag para sa autism.
+        \n&#160;&#8226;&#160;&#160;Asperger’s (o Asperger Syndrome) – ginagamit ng ilang tao upang ilarawan ang mga taong autistic na may karaniwan o mas mataas kaysa karaniwang antas ng katalinuhan.
+    </string>
+    <string name="lhub_m1_s5">Hindi Pa Ganap na Alam ang Sanhi ng Autism</string>
+    <string name="lhub_m1_s5_d1">
+        Hindi pa tiyak kung ano talaga ang sanhi ng autism, o kung may iisang dahilan ba ito.
+        \n\nMaaari itong makita sa magkakapamilyang miyembro, kaya posibleng minsan ay naipapasa ito mula sa magulang patungo sa anak.
+        \n\nAng autism ay:
+        \n&#160;&#8226;&#160;&#160;hindi dulot ng maling pagpapalaki o masamang parenting
+        \n&#160;&#8226;&#160;&#160;hindi sanhi ng mga bakuna, tulad ng MMR vaccine
+        \n&#160;&#8226;&#160;&#160;hindi konektado sa pagkain o diet
+        \n&#160;&#8226;&#160;&#160;hindi isang impeksiyon na maaaring maipasa sa ibang tao
+    </string>
+    <string name="lhub_m1_s6">Ang mga Taong may Autism ay Maaaring May Iba’t Ibang Antas ng Katalinuhan</string>
+    <string name="lhub_m1_s6_d1">
+        Ang ilang taong autistic ay may karaniwan o mas mataas pa sa karaniwang antas ng katalinuhan.
+        \n\nAng iba naman ay may learning disability. Ibig sabihin, maaari silang mahirapang alagaan ang sarili at mangailangan ng tulong sa pang-araw-araw na gawain.
+    </string>
+    <string name="lhub_m1_s7">Maaaring May Iba Pang Kondisyon ang mga Taong may Autism</string>
+    <string name="lhub_m1_s7_d1">
+        Karaniwan ding may kasamang ibang kondisyon ang mga taong autistic, tulad ng:
+        \n&#160;&#8226;&#160;&#160;attention deficit hyperactivity disorder (ADHD)
+        \n&#160;&#8226;&#160;&#160;dyslexia
+        \n&#160;&#8226;&#160;&#160;anxiety (pagkabalisa)
+        \n&#160;&#8226;&#160;&#160;depression (depresyon)
+        \n&#160;&#8226;&#160;&#160;epilepsy (epilepsiya)
+    </string>
+
+    <string name="lhub_m2_s1">Autism sa mga Bata</string>
+    <string name="lhub_m2_s1_d1">
+        Ang mga palatandaan ng autism sa mga batang paslit ay maaaring kabilang ang:
+        \n&#160;&#8226;&#160;&#160;hindi pagtugon kapag tinatawag ang kanilang pangalan
+        \n&#160;&#8226;&#160;&#160;pag-iwas sa eye contact o hindi direktang pagtingin sa kausap
+        \n&#160;&#8226;&#160;&#160;hindi pagngiti pabalik kapag nginingitian sila
+        \n&#160;&#8226;&#160;&#160;madaling ma-upset kapag may ayaw silang lasa, amoy, o tunog
+        \n&#160;&#8226;&#160;&#160;paulit-ulit na galaw tulad ng pagpaypay ng kamay, pagpitik ng daliri, o pag-ugoy ng katawan
+        \n&#160;&#8226;&#160;&#160;hindi gaanong nagsasalita kumpara sa ibang bata
+        \n&#160;&#8226;&#160;&#160;kakaunti o walang pretend play (kunwariang paglalaro)
+        \n&#160;&#8226;&#160;&#160;paulit-ulit na pagsasabi ng parehong salita o parirala
+    </string>
+    <string name="lhub_m2_s2">Autism sa Mas Nakatatandang Bata</string>
+    <string name="lhub_m2_s2_d1">
+        Ang mga palatandaan ng autism sa mas matatandang bata ay maaaring kabilang ang:
+        \n&#160;&#8226;&#160;&#160;tila nahihirapang maintindihan ang iniisip o nararamdaman ng ibang tao
+        \n&#160;&#8226;&#160;&#160;kakaibang paraan ng pagsasalita, tulad ng pag-uulit ng mga parirala o pakikipag-usap nang parang hindi nakikipagpalitan ng usapan
+        \n&#160;&#8226;&#160;&#160;gusto ang mahigpit na araw-araw na routine at labis na naiinis o nababalisa kapag ito ay nagbabago
+        \n&#160;&#8226;&#160;&#160;matinding interes sa partikular na paksa o gawain
+        \n&#160;&#8226;&#160;&#160;madaling ma-upset kapag inuutusan o pinapagawa ng isang bagay
+        \n&#160;&#8226;&#160;&#160;hirap makipagkaibigan o mas gustong mag-isa
+        \n&#160;&#8226;&#160;&#160;literal ang pag-intindi sa mga salita (halimbawa, maaaring hindi maintindihan ang mga idyoma tulad ng “break a leg”)
+        \n&#160;&#8226;&#160;&#160;nahihirapang ipahayag ang sariling nararamdaman
+    </string>
+    <string name="lhub_m2_s3">Autism sa mga Babae at Lalaki</string>
+    <string name="lhub_m2_s3_d1">
+        Minsan ay magkaiba ang pagpapakita ng autism sa mga babae at lalaki.
+        \n\nAng mga autistic na babae ay maaaring:
+        \n&#160;&#8226;&#160;&#160;itago ang ilang palatandaan ng autism sa pamamagitan ng paggaya sa kilos at paglalaro ng ibang bata
+        \n&#160;&#8226;&#160;&#160;umiwas o manahimik sa mga sitwasyong nahihirapan sila
+        \n&#160;&#8226;&#160;&#160;magmukhang mas nakakaya ang social situations
+        \n&#160;&#8226;&#160;&#160;magpakita ng mas kaunting paulit-ulit na kilos
+        \n\nDahil dito, mas mahirap minsan mapansin o matukoy ang autism sa mga babae.
+    </string>
+    <string name="lhub_m2_s4">Mahalagang Paalala</string>
+    <string name="lhub_m2_s4_d1">
+        Ang mga nabanggit na palatandaan ay hindi sapat para mag-self-diagnose. Maraming bata ang maaaring magpakita ng ilan sa mga ito ngunit hindi nangangahulugang may autism sila.
+        \n\nHuwag magsagawa ng sariling diagnosis.
+        \n\nKung may napapansin kang mga senyales na nakababahala, ugaliing magpakonsulta sa isang lisensyadong doktor tulad ng pediatrician, developmental pediatrician, o child psychiatrist para sa tamang pagsusuri at gabay.
+        \n\nAng maagang pagkilala at interbensyon ay mahalaga upang masuportahan ang pag-unlad ng bata.
+    </string>
+
+    <string name="lhub_m3_s1">Bigyan ang sarili ng oras</string>
+    <string name="lhub_m3_s1_d1">
+        Iba-iba ang reaksyon ng mga tao sa diagnosis ng autism.
+        \n\nPara sa ilan, nakagagaan ng loob na malaman kung bakit sila o ang kanilang anak ay nag-iisip, nakakaramdam, at kumikilos sa ganoong paraan. Para sa iba naman, maaari itong maging isang pagkabigla.
+        \n\nSubukang bigyan ang sarili ng sapat na oras upang tanggapin at unawain ang diagnosis.
+        \n\nTandaan:
+        \n&#160;&#8226;&#160;&#160;may tulong at suporta na available
+        \n&#160;&#8226;&#160;&#160;kahit mahirap ang sitwasyon ngayon, maaari pa rin itong bumuti
+        \n&#160;&#8226;&#160;&#160;ikaw o ang iyong anak ay nananatiling parehong tao tulad ng dati
+        \n&#160;&#8226;&#160;&#160;ang autism ay hindi isang sakit o karamdaman na may gamutan o “lunas”
+        \n&#160;&#8226;&#160;&#160;ang mga taong may autism ay may mga bagay na mahusay sila, bukod pa sa mga bagay na kailangan nila ng tulong
+    </string>
+    <string name="lhub_m3_s2">Maghanap ng tulong at mga serbisyong sumusuporta</string>
+    <string name="lhub_m3_s2_d1">
+        Maaaring makaramdam ka ng pag-iisa noong ikaw o ang iyong anak ay unang na-diagnose.
+        \n\nNgunit may mga lugar at taong maaari mong lapitan para sa suporta.
+        \n\nMaaari kang makakuha ng tulong mula sa:
+        \n&#160;&#8226;&#160;&#160;mga lokal na support group
+        \n&#160;&#8226;&#160;&#160;mga pambansang charity o organisasyong tumutulong
+        \n&#160;&#8226;&#160;&#160;iba pang autistic na tao o mga magulang sa social media at mga forum
+        \n&#160;&#8226;&#160;&#160;iyong paaralan, kolehiyo, o lugar ng trabaho
+        \n&#160;&#8226;&#160;&#160;inyong lokal na pamahalaan
+        \n&#160;&#8226;&#160;&#160;iyong GP o ang autism assessment team na nag-diagnose sa iyo
+    </string>
+    <string name="lhub_m3_s3">Makinig sa mga kuwento ng ibang tao</string>
+    <string name="lhub_m3_s3_d1">
+        May ilang tao na nakikitang nakatutulong ang pag-alam sa mga kuwento ng ibang taong may autism.
+        \n\nMaaari ka ring maghanap online ng mga blog, video, o aklat tungkol sa autism.
+        \n\nMahalaga:
+        \n\nTandaan na iba-iba ang karanasan ng bawat taong may autism. Ang nangyari sa ibang tao ay maaaring hindi kapareho ng mararanasan mo o ng iyong anak.
+    </string>
+    <string name="lhub_m3_s4">Magbantay sa iba pang mga problema sa kalusugan</string>
+    <string name="lhub_m3_s4_d1">
+        Ang autism ay hindi isang sakit. Ngunit maraming autistic na tao ang may iba pang mga kondisyon.
+        \n\nHindi ito palaging nasusuri o natutukoy sa panahon ng autism assessment.
+        \n\nMagpatingin sa GP kung mayroon kang anumang alalahanin tungkol sa iyong kalusugan o sa kalusugan ng iyong anak. Matutulungan ka nilang makakuha ng karagdagang pangangalaga na kailangan mo.
+    </string>
+    <string name="lhub_m3_s5">Alamin pa ang tungkol sa autism</string>
+    <string name="lhub_m3_s5_d1">
+        Maaaring makatulong sa iyo at sa iyong pamilya ang mas marami pang kaalaman tungkol sa autism.
+        \n\nMaraming impormasyong maaaring basahin, at maaaring marami itong kailangang unawain. Hindi mo kailangang basahin ang lahat.
+        \n\nMaaari kang makakuha ng mapagkakatiwalaang impormasyon mula sa:
+    </string>
+
+    <string name="lhub_m4_do">Gawin:</string>
+    <string name="lhub_m4_do_not">Huwag Gawin:</string>
+    <string name="lhub_m4_s0_d1">
+        Maghanap ng impormasyon at mga payo tungkol sa pamumuhay at pag-aalaga ng isang batang may autism.
+    </string>
+    <string name="lhub_m4_s1">Paano tulungan ang iyong autistic na anak sa pang-araw-araw na buhay</string>
+    <string name="lhub_m4_s2">Paano tulungan ang iyong anak na makipagkomunika</string>
+    <string name="lhub_m4_s2_d1">
+        \n&#160;&#8226;&#160;&#160;Gamitin ang pangalan ng iyong anak upang malaman nila na ikaw ay nakikipag-usap sa kanila
+        \n&#160;&#8226;&#160;&#160;Panatilihing simple at malinaw ang iyong wika
+        \n&#160;&#8226;&#160;&#160;Magsalita nang mabagal at malinaw
+        \n&#160;&#8226;&#160;&#160;Gumamit ng simpleng galaw, eye contact, at mga larawan o simbolo upang suportahan ang iyong sinasabi
+        \n&#160;&#8226;&#160;&#160;Bigyan ang iyong anak ng dagdag na oras upang maunawaan ang iyong sinabi
+        \n&#160;&#8226;&#160;&#160;Tanungin ang autism assessment team kung maaari kang humingi ng tulong mula sa isang speech and language therapist (SLT)
+        \n&#160;&#8226;&#160;&#160;Subukan ang mga paraan upang matulungan silang makipagkomunika, tulad ng Signalong, Makaton, o PECS
+        \n&#160;&#8226;&#160;&#160;Basahin ang mga tip mula sa National Autistic Society tungkol sa pakikipagkomunika sa iyong anak
+    </string>
+    <string name="lhub_m4_s2_d2">
+        &#160;&#8226;&#160;&#160;Subukang magtanong ng napakaraming tanong sa iyong anak
+        \n&#160;&#8226;&#160;&#160;Subukang makipag-usap sa isang maingay o mataong lugar
+        \n&#160;&#8226;&#160;&#160;magsabi ng mga bagay na maaaring magkaroon ng higit sa isang kahulugan, tulad ng “ayusin mo ang sarili mo,” “good luck,” o “nasa ilalim ka ng panahon” (na hindi literal ang ibig sabihin)
+    </string>
+    <string name="lhub_m4_s3">Pagharap sa Anxiety (Pagkabalisa)</string>
+    <string name="lhub_m4_s3_d1">
+        Ang anxiety o pagkabalisa ay nakaaapekto sa maraming batang may autism. Maaari itong dulot ng hindi nila lubos na pag-unawa sa mga nangyayari sa paligid nila, at ng pakiramdam na hindi sila naiintindihan o hindi sila tinatanggap ng mga taong hindi autistic.
+        \n\nSubukang alamin kung bakit nakakaramdam ng pagkabalisa ang iyong anak. Maaaring ito ay dahil sa:
+        \n&#160;&#8226;&#160;&#160;Pagbabago sa nakasanayang gawain (routine) – maaaring makatulong kung ihahanda mo ang iyong anak sa anumang pagbabago, tulad ng paglipat ng silid-aralan sa paaralan.
+        \n&#160;&#8226;&#160;&#160;Hirap sa pagtukoy, pag-unawa, o pamamahala ng kanilang mga damdamin
+        \n&#160;&#8226;&#160;&#160;Maingay o masyadong maliwanag/makulay na lugar – maaaring makatulong na dalhin ang iyong anak sa mas tahimik at mas kalmadong lugar, tulad ng ibang silid.
+    </string>
+    <string name="lhub_m4_s4">Pagtulong sa Pag-uugali ng Iyong Anak</string>
+    <string name="lhub_m4_s4_d1">
+        Ang ilang batang may autism ay maaaring magpakita ng mga pag-uugali tulad ng:
+        \n&#160;&#8226;&#160;&#160;Stimming – isang uri ng paulit-ulit na kilos (halimbawa, pagpagaspas ng kamay o pagpitik ng mga daliri).
+        \n&#160;&#8226;&#160;&#160;Meltdowns – ganap na pagkawala ng kontrol dahil sa labis na pagkaka-overwhelm o matinding emosyon.
+        \n\nKung ang iyong anak ay may ganitong mga pag-uugali, basahin ang mga payo kung paano matutulungan ang pag-uugali ng iyong anak.
+    </string>
+    <string name="lhub_m4_s5">Mga Suliranin sa Pagkain</string>
+    <string name="lhub_m4_s5_d1">
+        Maraming bata ang maselan sa pagkain o tinatawag na “fussy eaters.”
+        \n\nAng mga batang may autism ay maaaring:
+        \n&#160;&#8226;&#160;&#160;kumain lamang ng mga pagkaing may partikular na kulay o tekstura
+        \n&#160;&#8226;&#160;&#160;hindi kumain nang sapat o kaya naman ay kumain nang sobra
+        \n&#160;&#8226;&#160;&#160;kumain ng mga bagay na hindi pagkain (tinatawag na pica)
+        \n&#160;&#8226;&#160;&#160;magkaroon ng problema sa pag-ubo o pagkasakal habang kumakain
+        \n&#160;&#8226;&#160;&#160;makaranas ng paninigas ng dumi (constipation), kaya nakakaramdam sila ng kabusugan kahit kaunti pa lamang ang kanilang nakakain
+        \n\nMaaaring makatulong ang paglalaan ng food diary o talaan ng pagkain, kabilang kung ano, saan, at kailan kumakain ang iyong anak. Makakatulong ito upang mapansin mo ang mga karaniwang suliraning nararanasan ng iyong anak.
+    </string>
+    <string name="lhub_m4_s6">Mga Problema sa Pagtulog</string>
+    <string name="lhub_m4_s6_d1">
+        Maraming batang may autism ang nahihirapang makatulog o kaya ay nagigising nang ilang beses sa gabi.
+        \n\nMaaaring ito ay dahil sa:
+        \n&#160;&#8226;&#160;&#160;Pagkabalisa (anxiety)
+        \n&#160;&#8226;&#160;&#160;Sensitibidad sa liwanag mula sa smartphones o tablets
+        \n&#160;&#8226;&#160;&#160;Problema sa sleep hormone na melatonin
+        \n&#160;&#8226;&#160;&#160;Mga isyung tulad ng hyperactivity o kondisyong pangkalusugan na nakaaapekto sa pagtulog
+        \n\nMaaari mong matulungan ang iyong anak sa pamamagitan ng:
+        \n&#160;&#8226;&#160;&#160;Pagpapanatili ng sleep diary o talaan ng pagtulog upang mapansin ang mga karaniwang suliranin
+        \n&#160;&#8226;&#160;&#160;Pagsunod sa pare-parehong bedtime routine
+        \n&#160;&#8226;&#160;&#160;Pagtitiyak na ang kanilang silid-tulugan ay madilim at tahimik
+        \n&#160;&#8226;&#160;&#160;Pagpapasuot sa kanila ng ear plugs kung nakatutulong ito
+        \n&#160;&#8226;&#160;&#160;Pakikipag-usap sa isang doktor (GP) tungkol sa kung paano pamahalaan ang mga kondisyong pangkalusugan na nagpapahirap sa pagtulog, tulad ng food sensitivity o problema sa paghinga
+        \n\nKung hindi makatulong ang mga paraang ito, makipag-ugnayan sa inyong autism team upang gumawa ng sleep plan na makatutulong sa pag-aayos ng pagtulog ng iyong anak.
+        \n\nKung hindi pa rin bumuti ang pagtulog ng iyong anak, maaaring i-refer kayo ng GP sa isang pediatrician o child psychiatrist na may karanasan sa autism.
+    </string>
+    <string name="lhub_m4_s7">Pakikipagkaibigan at Pakikisalamuha</string>
+    <string name="lhub_m4_s7_d1">
+        Ang ilang batang may autism ay nahihirapang makipagkaibigan.
+        \n\nMay ilang bagay na maaari mong gawin upang makatulong:
+    </string>
+    <string name="lhub_m4_s7_d2">
+        &#160;&#8226;&#160;&#160;Humingi ng mga ideya mula sa ibang magulang sa mga autism forums at lokal na support groups
+        \n&#160;&#8226;&#160;&#160;Tanungin ang paaralan ng iyong anak kung paano sila makatutulong
+        \n&#160;&#8226;&#160;&#160;Kumonsulta sa inyong autism team kung paano matutulungan ang iyong anak na makipagkomunikasyon at makisalamuha
+        \n&#160;&#8226;&#160;&#160;Maghanap sa directory ng National Autistic Society para sa mga lokal na social group na autism-friendly
+        \n&#160;&#8226;&#160;&#160;Magbasa ng iba pang payo tungkol sa pakikipagkaibigan mula sa National Autistic Society
+    </string>
+    <string name="lhub_m4_s7_d3">
+        &#160;&#8226;&#160;&#160;Huwag maglagay ng labis na pressure sa iyong anak – ang pagkatuto ng social skills ay nangangailangan ng panahon
+        \n&#160;&#8226;&#160;&#160;Huwag pilitin ang iyong anak sa mga sitwasyong sosyal kung komportable naman sila na mag-isa
+    </string>
+
+    <string name="lhub_m5_s1">Mga Kaibigan at Pamilya</string>
+    <string name="lhub_m5_s1_d1">
+        Ang pagsasabi sa mga taong malapit sa iyo tungkol sa iyong autism diagnosis o ng iyong anak ay makatutulong upang mas maunawaan nila kung paano kayo masuportahan.
+        \n\nMaaari silang makatulong sa:
+        \n&#160;&#8226;&#160;&#160;Mga pang-araw-araw na gawain upang magkaroon ka ng mas maraming oras para magpokus sa iyong sarili o sa iyong anak
+        \n&#160;&#8226;&#160;&#160;Pagbibigay ng emosyonal na suporta
+    </string>
+    <string name="lhub_m5_s2">Mga Pambansang Charity at Support Network</string>
+    <string name="lhub_m5_s2_d2">
+        Para sa mga autistic na bata at kabataan, at kanilang mga magulang at tagapag-alaga.
+    </string>
+    <string name="lhub_m5_s2_d3">Telepono</string>
+    <string name="lhub_m5_s2_d4">E-mail</string>
+    <string name="lhub_m5_s2_d5">Website</string>
+    <string name="lhub_m5_s3">Mga Lokal na Support Group</string>
+    <string name="lhub_m5_s3_d1">
+        Ang assessment team na nag-diagnose sa iyo o sa iyong anak ay dapat magbigay ng impormasyon tungkol sa mga lokal na support group.
+        \n\nMaaari ka ring maghanap ng mga lokal na grupo sa pamamagitan ng:
+    </string>
+    <string name="lhub_m5_s4">Social Media and Forums</string>
+    <string name="lhub_m5_s4_d1">
+        Maraming taong may karanasan sa autism ang nag-aalok ng suporta at nagbabahagi ng kanilang mga kwento sa forums at social media.
+        \n&#160;&#8226;&#160;&#160;Hindi mo kailangang makipag-usap sa iba sa mga online group, ngunit makatutulong na basahin ang kanilang mga sinasabi.
+        \n&#160;&#8226;&#160;&#160;Magandang simulan sa mga grupo na pinapatakbo ng mga autism charity. Tandaan lamang na
+        \n&#160;&#8226;&#160;&#160;hindi minomonitor ng NHS ang mga site na ito.
+    </string>
+    <string name="lhub_m5_s3_d3">Isang malaking non-profit na organisasyon para sa mga pamilya at indibidwal na may autism. May mga chapters sa iba’t ibang parte ng bansa kung saan nagkakaroon ng family support groups, seminar series, at referral services.</string>
+    <string name="lhub_m5_s3_d5">Isang website at online support resource para sa mga magulang at pamilya ng mga batang may autism sa Pilipinas, na may impormasyon, tips, at mga resource link.</string>
+    <string name="lhub_m5_s4_d4">Mahalagang Paalala</string>
+    <string name="lhub_m5_s4_d5">
+        Ang mga komento sa social media at forums ay kadalasang base sa personal na karanasan at hindi dapat ituring na payona tiyak na makakatulong sa iyo o sa iyong anak.
+    </string>
+    <string name="lhub_m5_s5">Ang Iyong Paaralan, Kolehiyo, o Lugar ng Trabaho</string>
+    <string name="lhub_m5_s5_d1">
+        Maaari kang humingi ng suporta upang maging mas madali ang mga bagay para sa iyo o sa iyong anak.
+        \n\nAlamin kung anong tulong ang available sa:
+        \n&#160;&#8226;&#160;&#160;Nursery o paaralan – makipag-usap sa mga guro o sa special educational needs co-ordinator (SENCO)
+        \n&#160;&#8226;&#160;&#160;Kolehiyo o unibersidad – makipag-ugnayan sa student support services
+        \n&#160;&#8226;&#160;&#160;Trabaho – makipag-usap sa iyong manager at human resources (HR)
+    </string>
+    <string name="lhub_m5_s6">Your Local Council</string>
+    <string name="lhub_m5_s6_d1">
+        Maaari kang makakuha ng ilang suporta at benepisyong pinansyal mula sa iyong lokal na konseho.
+        \n\nAng mga available na tulong ay nakadepende sa iyong sitwasyon.
+    </string>
+
+    <string name="lhub_m6_s0_d1">
+        Mayroong mga materyales na madaling basahin at mga video na makakatulong sa pag-unawa ng autism.
+        \n\nMaaaring gamitin ito ng mga magulang, tagapag-alaga, o kahit ng mga batang autistic upang mas maunawaan ang autism at kung paano ito makaapekto sa pang-araw-araw na buhay.</string>
+    <string name="lhub_m6_s1_d1">
+        Opisyal na website ng <b>Autism Society Philippines (ASP)</b>, isang pambansang non-profit na sumusuporta sa mga taong autistic at kanilang pamilya. Nagbibigay ng impormasyon, adbokasiya, support groups, seminar, mga programa sa maagang interbensyon, at mga community events.
+    </string>
+    <string name="lhub_m6_s2_d1">
+        Nagbibigay ng pangkalahatang impormasyon tungkol sa Autism Society Philippines para sa mga international audience, at ipinapakita ang kanilang papel sa edukasyon, awareness, at suporta para sa autism.
+    </string>
+    <string name="lhub_m6_s3_d1">
+        <b>YouTube channel ng Autism Society Philippines</b> na may mga video tungkol sa awareness activities, personal na kwento, educational content, at mga events para sa mga magulang, tagapag-alaga, at mga taong autistic.
+    </string>
+    <string name="lhub_m6_s4_d1">
+        Isang professional na organisasyon na nagbibigay ng <b>Applied Behavior Analysis (ABA)</b> therapy at mga individualized program upang matulungan ang mga batang autistic na mapaunlad ang kanilang komunikasyon, social skills, at kakayahan sa pang-araw-araw na buhay.
+    </string>
+    <string name="lhub_m6_s5_d1">
+        Nagbibigay ang <b>A Child Can Foundation</b> ng maagang interbensyon gamit ang ABA therapy para sa mga batang may autism at developmental delays, na nakatuon sa komunikasyon, social skills, motor development, at adaptive skills.
+    </string>
 </resources>
