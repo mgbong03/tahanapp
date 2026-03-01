@@ -28,6 +28,7 @@ import androidx.core.view.WindowInsetsCompat;
 import org.json.JSONException;
 
 import java.io.IOException;
+import java.util.Locale;
 import java.util.Objects;
 
 import me.kaylunasa.tahanapp.R;
@@ -138,35 +139,47 @@ public class SettingsActivity extends TahanAppActivity {
                 locale = "en";
             if (filipinoRadioBtn.isChecked())
                 locale = "fil";
-            final String localeCopy = locale;
 
-            AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setTitle(getResources().getText(R.string.language_change))
-                    .setMessage(getResources().getText(R.string.language_change_desc))
-                    .setPositiveButton("Restart", (v2, e) -> {
-                        try {
-                            SettingsDataManager.putLanguage(this, localeCopy);
-                            LocaleHelper.setLocale(this, localeCopy);
-                        }
-                        catch (JSONException ex)  {
-                            Log.e(TAG, "locale change: Could not change locale", ex);
-                            Toast.makeText(SettingsActivity.this, "Unable to change language", Toast.LENGTH_SHORT)
-                                    .show();
-                        }
+            try {
+                SettingsDataManager.putLanguage(this, locale);
+                LocaleHelper.setLocale(this, locale);
+            } catch (JSONException ex) {
+                Log.e(TAG, "locale change: Could not change locale", ex);
+                Toast.makeText(SettingsActivity.this, "Unable to change language", Toast.LENGTH_SHORT)
+                        .show();
+            }
 
-                        Intent intent = new Intent(this, MainActivity.class);
-                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-                        startActivity(intent);
-
-                        android.os.Process.killProcess(android.os.Process.myPid());
-                        System.exit(0);
-                    })
-                    .setNegativeButton("Cancel", (v2, e) -> Toast.makeText(
-                            this,
-                            getResources().getText(R.string.language_change_cancel),
-                            Toast.LENGTH_SHORT).show())
-                    .show();
+            Toast.makeText(this, getResources().getText(R.string.settings_saved), Toast.LENGTH_SHORT).show();
+            recreate();
         });
+//
+//            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+//            builder.setTitle(getResources().getText(R.string.language_change))
+//                    .setMessage(getResources().getText(R.string.language_change_desc))
+//                    .setPositiveButton("Restart", (v2, e) -> {
+//                        try {
+//                            SettingsDataManager.putLanguage(this, localeCopy);
+//                            LocaleHelper.setLocale(this, localeCopy);
+//                        }
+//                        catch (JSONException ex)  {
+//                            Log.e(TAG, "locale change: Could not change locale", ex);
+//                            Toast.makeText(SettingsActivity.this, "Unable to change language", Toast.LENGTH_SHORT)
+//                                    .show();
+//                        }
+//
+//                        Intent intent = new Intent(this, MainActivity.class);
+//                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+//                        startActivity(intent);
+//
+//                        android.os.Process.killProcess(android.os.Process.myPid());
+//                        System.exit(0);
+//                    })
+//                    .setNegativeButton("Cancel", (v2, e) -> Toast.makeText(
+//                            this,
+//                            getResources().getText(R.string.language_change_cancel),
+//                            Toast.LENGTH_SHORT).show())
+//                    .show();
+//        });
 
         CheckBox forcedNarrationCheckbox = findViewById(R.id.forcedNarrationsCheckbox);
         forcedNarrationCheckbox.setChecked(settingForcedNarration);
@@ -283,24 +296,6 @@ public class SettingsActivity extends TahanAppActivity {
                 }
             }
         });
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_logout_btn, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-
-        if (id == R.id.menu_logout) {
-            logout();
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 
     private void logout() {
