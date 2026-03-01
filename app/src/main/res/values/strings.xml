@@ -633,4 +633,5 @@
     <string name="lhub_m6_s5_d1">
         <b>A Child Can Foundation</b> provides early intervention using ABA therapy for children with autism and developmental delays, focusing on communication, social skills, motor development, and adaptive skills.
     </string>
+    <string name="step_format">Step %1$d of 8</string>
 </resources>

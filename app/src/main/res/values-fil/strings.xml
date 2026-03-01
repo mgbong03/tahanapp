@@ -552,4 +552,5 @@
     <string name="lhub_m6_s5_d1">
         Nagbibigay ang <b>A Child Can Foundation</b> ng maagang interbensyon gamit ang ABA therapy para sa mga batang may autism at developmental delays, na nakatuon sa komunikasyon, social skills, motor development, at adaptive skills.
     </string>
+    <string name="step_format">Hakbang %1$d of 8</string>
 </resources>

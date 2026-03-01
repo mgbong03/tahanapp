@@ -38,13 +38,33 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:background="@drawable/layout_bg_toponly"
             android:paddingHorizontal="20dp"
-            android:paddingVertical="30dp"
+            android:paddingBottom="30dp"
+            android:paddingTop="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
+            <TextView
+                android:id="@+id/progressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/frutiger_bold"
+                android:textColor="@color/element_font"
+                android:textSize="12sp"
+                android:text="@string/step_format" />
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:progressTint="@color/btn_tint"
+                android:progressBackgroundTint="@color/darkgray"
+                tools:progress="4"
+                android:max="8"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
             <Button
                 android:id="@+id/nextBtn"
                 android:layout_width="match_parent"

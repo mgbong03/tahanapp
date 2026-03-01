@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -89,6 +90,7 @@ public class CreateAssessmentActivity extends TahanAppActivity {
                 toolbar.getNavigationIcon().setTint(ContextCompat.getColor(this, R.color.black));
         }
 
+        // todo defaults.
         navigateToFragment(new PreliminaryFragment());
 
         Button nextBtn = findViewById(R.id.nextBtn);
@@ -107,6 +109,7 @@ public class CreateAssessmentActivity extends TahanAppActivity {
                 else {
                     getSupportFragmentManager().popBackStackImmediate();
                     updateToolbarTitle(getSupportFragmentManager().findFragmentById(R.id.fragmentContainer));
+                    updateProgressbar(getSupportFragmentManager().findFragmentById(R.id.fragmentContainer));
                     nextBtn.setText(getResources().getText(R.string.next));
                 }
             }
@@ -220,6 +223,7 @@ public class CreateAssessmentActivity extends TahanAppActivity {
         invalidateMenu();
 
         updateToolbarTitle(fragment);
+        updateProgressbar(fragment);
     }
 
     private void updateToolbarTitle(Fragment fragment) {
@@ -246,6 +250,35 @@ public class CreateAssessmentActivity extends TahanAppActivity {
             else if (fragment instanceof AssessmentSummaryFragment)
                 titleView.setText(getResources().getText(R.string.assessment_summary));
         }
+    }
+    private void updateProgressbar(Fragment fragment) {
+        TextView progressText = findViewById(R.id.progressText);
+        ProgressBar progressBar = findViewById(R.id.progressBar);
+
+        int progress = 0;
+
+        if (fragment instanceof RFlaccFaceFragment)
+            progress = 1;
+        else if (fragment instanceof RFlaccLegsFragment)
+            progress = 2;
+        else if (fragment instanceof RFlaccActivityFragment)
+            progress = 3;
+        else if (fragment instanceof RFlaccCryFragment)
+            progress = 4;
+        else if (fragment instanceof RFlaccConsolabilityFragment)
+            progress = 5;
+        else if (fragment instanceof PainLocationFragment)
+            progress = 6;
+        else if (fragment instanceof ObservationsFragment)
+            progress = 7;
+        else if (fragment instanceof AssessmentSummaryFragment)
+            progress = 8;
+
+        progressText.setText(String.format(
+                getResources().getString(R.string.step_format),
+                progress
+        ));
+        progressBar.setProgress(progress);
     }
 
     @Override
