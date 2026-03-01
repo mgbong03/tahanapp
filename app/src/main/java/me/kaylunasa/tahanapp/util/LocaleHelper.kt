@@ -2,18 +2,23 @@ package me.kaylunasa.tahanapp.util
 
 import android.annotation.TargetApi
 import android.content.Context
+import android.content.res.Resources
 import android.os.Build
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.os.LocaleListCompat
 import java.util.IllformedLocaleException
 import java.util.Locale
 
 object LocaleHelper {
     @JvmStatic
     fun setLocale(context: Context, languageCode: String?): Context {
-        if (languageCode == null) return context
-
         try {
-            val locale = Locale.Builder().setLanguage(languageCode).build()
+            val locale = languageCode?.let { Locale.Builder().setLanguage(it).build() }
+                ?: Resources.getSystem().configuration.locales[0]
             Locale.setDefault(locale)
+            AppCompatDelegate.setApplicationLocales(
+                LocaleListCompat.forLanguageTags(locale.toLanguageTag())
+            )
             return updateResources(context, locale)
         }
         catch (e: IllformedLocaleException) {
