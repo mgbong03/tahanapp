@@ -13,8 +13,6 @@
 
     <style name="DefaultTextViewStyle" parent="Widget.MaterialComponents.TextView">
         <item name="android:lineSpacingMultiplier">1.15</item>
-        <item name="android:textColor">@color/darkgray</item>
-        <item name="android:fontFamily">@font/frutiger</item>
     </style>
 
     <style name="Theme.TahanApp" parent="Base.Theme.TahanApp" />
