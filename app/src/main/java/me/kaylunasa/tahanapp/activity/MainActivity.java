@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -27,7 +28,9 @@ import java.io.IOException;
 import java.util.Objects;
 
 import me.kaylunasa.tahanapp.R;
+import me.kaylunasa.tahanapp.util.LocaleHelper;
 import me.kaylunasa.tahanapp.util.SessionDataManager;
+import me.kaylunasa.tahanapp.util.SettingsDataManager;
 import me.kaylunasa.tahanapp.util.Sha256Kt;
 import me.kaylunasa.tahanapp.util.UserDataManager;
 
@@ -91,6 +94,45 @@ public class MainActivity extends TahanAppActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        if (SettingsDataManager.isFirstLaunch(this)) {
+            View dialogView = getLayoutInflater().inflate(R.layout.dialog_language, null);
+
+            AlertDialog.Builder chooseSystemLanguageBuilder = new AlertDialog.Builder(this);
+            chooseSystemLanguageBuilder.setTitle(getResources().getText(R.string.first_time_language))
+                    .setView(dialogView)
+                    .setCancelable(false)
+                    .setPositiveButton("OK", (v, e) -> {
+                        try {
+                            RadioButton englishRadioBtn = dialogView.findViewById(R.id.englishRadioBtn);
+                            RadioButton filipinoRadioBtn = dialogView.findViewById(R.id.filipinoRadioBtn);
+
+                            String locale = null;
+                            if (englishRadioBtn.isChecked())
+                                locale = "en";
+                            if (filipinoRadioBtn.isChecked())
+                                locale = "fil";
+
+                            try {
+                                SettingsDataManager.putLanguage(this, locale);
+                                LocaleHelper.setLocale(this, locale);
+                                Toast.makeText(this, getResources().getText(R.string.settings_saved), Toast.LENGTH_SHORT).show();
+                                SettingsDataManager.markNonFirstLaunch(MainActivity.this);
+                                recreate();
+                            }
+                            catch (JSONException ex) {
+                                Log.e(TAG, "locale change: Could not change locale", ex);
+                                Toast.makeText(this, "Unable to set language", Toast.LENGTH_SHORT)
+                                        .show();
+                                throw ex;
+                            }
+                        }
+                        catch (JSONException ex) {
+                            Log.e(TAG, "onCreate: Could not mark as first launch", ex);
+                        }
+                    })
+                    .show();
+        }
 
         final Button loginBtn = findViewById(R.id.login_btn);
         final Button signupBtn = findViewById(R.id.signup_btn);
