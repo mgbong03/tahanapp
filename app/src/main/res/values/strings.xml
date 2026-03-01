@@ -636,4 +636,7 @@
     </string>
     <string name="step_format">Step %1$d of 8</string>
     <string name="first_time_language">Choose a language</string>
+    <string name="notify_me">Notify me again after 8 hours</string>
+    <string name="notification_title">Assessment Reminder</string>
+    <string name="notification_content">%1$s was last assessed 8 hours ago. Assess again?</string>
 </resources>

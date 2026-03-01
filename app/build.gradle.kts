@@ -52,6 +52,7 @@ dependencies {
     implementation(libs.core.ktx)
     implementation(libs.mpandroidchart)
     implementation(libs.jsoup)
+    implementation(libs.workruntimektx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

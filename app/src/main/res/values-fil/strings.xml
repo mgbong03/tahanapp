@@ -555,4 +555,7 @@
     </string>
     <string name="step_format">Hakbang %1$d of 8</string>
     <string name="first_time_language">Pumili ng wika</string>
+    <string name="notify_me">I-notify muli ako makatapos ng 8 na oras</string>
+    <string name="notification_title">Paalala ng Assessment</string>
+    <string name="notification_content">%1$s ay huling inassess noong %2$s. Mag-assess muli?</string>
 </resources>

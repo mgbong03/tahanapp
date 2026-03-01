@@ -22,6 +22,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.work.Data;
+import androidx.work.OneTimeWorkRequest;
+import androidx.work.WorkManager;
 
 import com.google.android.material.imageview.ShapeableImageView;
 
@@ -32,6 +35,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
+import java.util.concurrent.TimeUnit;
 
 import me.kaylunasa.tahanapp.R;
 import me.kaylunasa.tahanapp.adapter.AssessmentCardAdapter;
@@ -40,6 +44,7 @@ import me.kaylunasa.tahanapp.data.ChildProfile;
 import me.kaylunasa.tahanapp.data.User;
 import me.kaylunasa.tahanapp.fragment.AddProfileFragment;
 import me.kaylunasa.tahanapp.fragment.EditProfileFragment;
+import me.kaylunasa.tahanapp.notification.NotificationWorker;
 import me.kaylunasa.tahanapp.util.SessionDataManager;
 import me.kaylunasa.tahanapp.util.UserDataManager;
 
@@ -105,6 +110,7 @@ public class ChildViewActivity extends TahanAppActivity {
                         int activityScore = data.getIntExtra("activityScore", 0);
                         int cryScore = data.getIntExtra("cryScore", 0);
                         int consolabilityScore = data.getIntExtra("consolabilityScore", 0);
+                        boolean isNotify = data.getBooleanExtra("isNotify", false);
 
                         List<String> painLocations = List.of(Objects.requireNonNullElse(data.getStringArrayExtra("painLocations"), new String[]{}));
                         String comments = data.getStringExtra("comments");
@@ -144,7 +150,19 @@ public class ChildViewActivity extends TahanAppActivity {
                             );
                             Toast.makeText(this, getResources().getText(R.string.assessment_saved), Toast.LENGTH_SHORT).show();
 
-                            // todo prompt user if they want to be notified after 8 hours
+                            if (isNotify) {
+                                Log.d(TAG, "onCreate: Scheduling notification");
+                                Data workData = new Data.Builder()
+                                        .putString("childName", childProfile.getName())
+                                        .putInt("notifId", childProfile.getName().hashCode())
+                                        .build();
+                                OneTimeWorkRequest notifWork = new OneTimeWorkRequest.Builder(NotificationWorker.class)
+                                        .setInitialDelay(8, TimeUnit.HOURS)
+                                        .setInputData(workData)
+                                        .build();
+
+                                WorkManager.getInstance(this).enqueue(notifWork);
+                            }
 
                             recreate();
                         }

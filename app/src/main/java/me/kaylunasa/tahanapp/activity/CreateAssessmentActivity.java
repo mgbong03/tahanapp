@@ -8,7 +8,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,11 +24,15 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.work.Data;
+import androidx.work.OneTimeWorkRequest;
+import androidx.work.WorkManager;
 
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
+import java.util.concurrent.TimeUnit;
 
 import me.kaylunasa.tahanapp.R;
 import me.kaylunasa.tahanapp.fragment.AssessmentSummaryFragment;
@@ -38,6 +44,7 @@ import me.kaylunasa.tahanapp.fragment.RFlaccConsolabilityFragment;
 import me.kaylunasa.tahanapp.fragment.RFlaccCryFragment;
 import me.kaylunasa.tahanapp.fragment.RFlaccFaceFragment;
 import me.kaylunasa.tahanapp.fragment.RFlaccLegsFragment;
+import me.kaylunasa.tahanapp.notification.NotificationWorker;
 import me.kaylunasa.tahanapp.util.SettingsDataManager;
 
 public class CreateAssessmentActivity extends TahanAppActivity {
@@ -186,8 +193,11 @@ public class CreateAssessmentActivity extends TahanAppActivity {
             }
 
             if (currentFragment instanceof AssessmentSummaryFragment) {
+                View sendNotif = getLayoutInflater().inflate(R.layout.dialog_send_notification, null);
+
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
                 builder.setTitle(getResources().getText(R.string.save_summary_title))
+                        .setView(sendNotif)
                         .setMessage(getResources().getText(R.string.save_summary_prompt))
                         .setPositiveButton("OK", (v2, e) -> {
                             String[] painLocationsArr = new String[this.painLocations.size()];
@@ -202,6 +212,7 @@ public class CreateAssessmentActivity extends TahanAppActivity {
                             resultIntent.putExtra("consolabilityScore", this.consolabilityScore);
                             resultIntent.putExtra("painLocations", painLocationsArr);
                             resultIntent.putExtra("comments", this.comments);
+                            resultIntent.putExtra("isNotify", ((CheckBox) sendNotif.findViewById(R.id.notifyMe)).isChecked());
                             setResult(RESULT_OK, resultIntent);
 
                             finish();
