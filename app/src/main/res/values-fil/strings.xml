@@ -235,11 +235,12 @@
     <string name="language_change_cancel">Hindi pinalitan ang wika.</string>
     <string name="play_sound">I-Play ang Instruksyon</string>
     <string name="audio_not_playable">Di mai-play ang audio.</string>
-    <string name="audio_play">Nagpe-play ng instruction audio...</string>
+    <string name="audio_play">Nagpe-play ng instruction audio…</string>
     <string name="delete_account_confirm">Sigurado bang i-delete ang iyong account? Hindi mababawi ang aksyon na ito!</string>
     <string name="delete_account_cancel">Hindi nag-delete ng account.</string>
     <string name="unsaved_changes_prompt">Sigurado bang mag-exit nang di nag-save?</string>
-    <string name="narration_enable_all">I-enable ang mga narration sa Filipino kahit hindi Filipino ang wika</string>
+    <string name="assessment_enable_all">I-enable ang mga narration sa Filipino kahit hindi Filipino ang wika</string>
+    <string name="assessment_show_prelim">Ipakita ang r-FLACC preliminary bago ang bawat assessment</string>
     <string name="settings_saved">Nai-save ang settings.</string>
     <string name="password_change_success">Napalitan na ang password</string>
     <string name="delete_profile">I-Delete ang Profile</string>

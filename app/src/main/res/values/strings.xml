@@ -288,8 +288,9 @@
     <string name="delete_account_cancel">Canceled account deletion.</string>
     <string name="unsaved_changes" translatable="false">Unsaved Changes</string>
     <string name="unsaved_changes_prompt">Are you sure you want to exit without saving?</string>
-    <string name="settings_narration" translatable="false">Narration</string>
-    <string name="narration_enable_all">Enable Filipino narrations outside Filipino language</string>
+    <string name="settings_assessment" translatable="false">Assessment</string>
+    <string name="assessment_enable_all">Enable Filipino narrations outside Filipino language</string>
+    <string name="assessment_show_prelim">Show r-FLACC preliminary before each assessment</string>
     <string name="settings_saved">Saved settings.</string>
     <string name="password_change_success">Password successfully changed</string>
     <string name="delete_profile">Delete Profile</string>

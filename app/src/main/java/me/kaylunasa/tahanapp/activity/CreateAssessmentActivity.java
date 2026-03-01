@@ -90,8 +90,10 @@ public class CreateAssessmentActivity extends TahanAppActivity {
                 toolbar.getNavigationIcon().setTint(ContextCompat.getColor(this, R.color.black));
         }
 
-        // todo defaults.
-        navigateToFragment(new PreliminaryFragment());
+        if (SettingsDataManager.getShowPreliminary(this))
+            navigateToFragment(new PreliminaryFragment());
+        else
+            navigateToFragment(new RFlaccFaceFragment());
 
         Button nextBtn = findViewById(R.id.nextBtn);
 
@@ -99,9 +101,8 @@ public class CreateAssessmentActivity extends TahanAppActivity {
             @Override
             public void handleOnBackPressed() {
                 stopCurrentSound();
-                
-                Fragment currentFragment = getSupportFragmentManager().findFragmentById(R.id.fragmentContainer);
-                if (currentFragment instanceof PreliminaryFragment) {
+
+                if (getSupportFragmentManager().getBackStackEntryCount() == 0) {
                     setEnabled(false);
                     setResult(RESULT_CANCELED);
                     finish();

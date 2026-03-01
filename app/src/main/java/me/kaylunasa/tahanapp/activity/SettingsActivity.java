@@ -45,6 +45,7 @@ public class SettingsActivity extends TahanAppActivity {
     private String username;
     private String settingLanguage;
     private boolean settingForcedNarration;
+    private boolean settingShowPreliminary;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +54,7 @@ public class SettingsActivity extends TahanAppActivity {
 
             this.settingLanguage = SettingsDataManager.getLanguage(this);
             this.settingForcedNarration = SettingsDataManager.getForceNarrations(this);
+            this.settingShowPreliminary = SettingsDataManager.getShowPreliminary(this);
         }
         catch (IllegalStateException | JSONException e) {
             Toast.makeText(this, getResources().getText(R.string.logged_out_force), Toast.LENGTH_SHORT).show();
@@ -152,47 +154,24 @@ public class SettingsActivity extends TahanAppActivity {
             Toast.makeText(this, getResources().getText(R.string.settings_saved), Toast.LENGTH_SHORT).show();
             recreate();
         });
-//
-//            AlertDialog.Builder builder = new AlertDialog.Builder(this);
-//            builder.setTitle(getResources().getText(R.string.language_change))
-//                    .setMessage(getResources().getText(R.string.language_change_desc))
-//                    .setPositiveButton("Restart", (v2, e) -> {
-//                        try {
-//                            SettingsDataManager.putLanguage(this, localeCopy);
-//                            LocaleHelper.setLocale(this, localeCopy);
-//                        }
-//                        catch (JSONException ex)  {
-//                            Log.e(TAG, "locale change: Could not change locale", ex);
-//                            Toast.makeText(SettingsActivity.this, "Unable to change language", Toast.LENGTH_SHORT)
-//                                    .show();
-//                        }
-//
-//                        Intent intent = new Intent(this, MainActivity.class);
-//                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-//                        startActivity(intent);
-//
-//                        android.os.Process.killProcess(android.os.Process.myPid());
-//                        System.exit(0);
-//                    })
-//                    .setNegativeButton("Cancel", (v2, e) -> Toast.makeText(
-//                            this,
-//                            getResources().getText(R.string.language_change_cancel),
-//                            Toast.LENGTH_SHORT).show())
-//                    .show();
-//        });
 
         CheckBox forcedNarrationCheckbox = findViewById(R.id.forcedNarrationsCheckbox);
         forcedNarrationCheckbox.setChecked(settingForcedNarration);
+
+        CheckBox showPreliminaryCheckbox = findViewById(R.id.showPreliminaryCheckbox);
+        showPreliminaryCheckbox.setChecked(settingShowPreliminary);
 
         Button saveNarrationBtn = findViewById(R.id.saveNarrationBtn);
         saveNarrationBtn.setOnClickListener((v) -> {
             try {
                 this.settingForcedNarration = forcedNarrationCheckbox.isChecked();
+                this.settingShowPreliminary = forcedNarrationCheckbox.isChecked();
                 SettingsDataManager.putForceNarrations(this, this.settingForcedNarration);
+                SettingsDataManager.putShowPreliminary(this, this.settingShowPreliminary);
                 Toast.makeText(this, getResources().getText(R.string.settings_saved), Toast.LENGTH_SHORT).show();
             }
             catch (JSONException ex)  {
-                Log.e(TAG, "narration change: Could not change narration setting", ex);
+                Log.e(TAG, "assessment settings change: Could not change assessment settings", ex);
                 Toast.makeText(SettingsActivity.this, "Unable to save settings", Toast.LENGTH_SHORT)
                         .show();
             }
@@ -281,6 +260,10 @@ public class SettingsActivity extends TahanAppActivity {
 
                 boolean selectedNarrationSetting = forcedNarrationCheckbox.isChecked();
                 if (selectedNarrationSetting != settingForcedNarration)
+                    unsavedChanges = true;
+
+                boolean selectedPreliminarySetting = showPreliminaryCheckbox.isChecked();
+                if (selectedPreliminarySetting != settingShowPreliminary)
                     unsavedChanges = true;
 
                 if (unsavedChanges) {
