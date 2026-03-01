@@ -13,8 +13,11 @@ object SettingsDataManager {
     private val TAG: String = SettingsDataManager::class.java.simpleName
     private const val STORAGE_FILE = "app_settings.json"
 
+    private const val KEY_FIRST_LAUNCH = "isFirstLaunch"
+
     private const val KEY_LANGUAGE = "language"
     private const val KEY_NARRATION = "forceNarration"
+    private const val KEY_PRELIMINARY = "showPreliminary"
 
     @JvmStatic
     fun dumpSettings(context: Context) {
@@ -39,6 +42,22 @@ object SettingsDataManager {
     }
 
     @JvmStatic
+    fun isFirstLaunch(context: Context): Boolean {
+        return try {
+            return getSettingKey<Boolean>(context, KEY_FIRST_LAUNCH) ?: true
+        } catch (e: JSONException) {
+            Log.e(TAG, "isFirstLaunch: Could not properly fetch first launch status", e)
+            true
+        }
+    }
+
+    @JvmStatic
+    @Throws(JSONException::class)
+    fun markNonFirstLaunch(context: Context,) {
+        putSettingKey(context, KEY_FIRST_LAUNCH, false)
+    }
+
+    @JvmStatic
     fun getForceNarrations(context: Context): Boolean {
         return try {
             return getSettingKey<Boolean>(context, KEY_NARRATION) ?: false
@@ -52,6 +71,22 @@ object SettingsDataManager {
     @Throws(JSONException::class)
     fun putForceNarrations(context: Context, narrations: Boolean) {
         putSettingKey(context, KEY_NARRATION, narrations)
+    }
+
+    @JvmStatic
+    fun getShowPreliminary(context: Context): Boolean {
+        return try {
+            return getSettingKey<Boolean>(context, KEY_PRELIMINARY) ?: true
+        } catch (e: JSONException) {
+            Log.e(TAG, "getShowPreliminary: Could not properly fetch show preliminary setting", e)
+            true
+        }
+    }
+
+    @JvmStatic
+    @Throws(JSONException::class)
+    fun putShowPreliminary(context: Context, narrations: Boolean) {
+        putSettingKey(context, KEY_PRELIMINARY, narrations)
     }
 
     @Throws(JSONException::class)
