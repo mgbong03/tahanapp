@@ -17,6 +17,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import org.json.JSONException;
 
 import java.util.List;
@@ -107,7 +109,7 @@ public class HomeActivity extends TahanAppActivity {
             startActivity(intent);
         });
 
-        Button addButton = findViewById(R.id.addButton);
+        FloatingActionButton addButton = findViewById(R.id.addButtonFloating);
         addButton.setOnClickListener((v) -> {
             AddProfileFragment profileFragment = new AddProfileFragment();
             profileFragment.show(getSupportFragmentManager(), "AddProfileFragment");

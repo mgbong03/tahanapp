@@ -185,18 +185,6 @@
                             android:textColor="@color/element_font"
                             android:textSize="24sp" />
 
-                        <Button
-                            android:id="@+id/addButton"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:background="@drawable/round_button"
-                            android:padding="0dp"
-                            app:backgroundTint="@color/element_font"
-                            app:icon="@drawable/baseline_add_24"
-                            app:iconGravity="textStart"
-                            app:iconPadding="0dp"
-                            app:iconSize="24sp"
-                            app:iconTint="@color/white" />
                     </LinearLayout>
 
                     <androidx.recyclerview.widget.RecyclerView
@@ -227,4 +215,16 @@
         </androidx.core.widget.NestedScrollView>
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addButtonFloating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/add_profile"
+        android:src="@drawable/baseline_add_24"
+        app:backgroundTint="@color/element_font"
+        app:tint="@android:color/white"
+        android:layout_marginVertical="24dp"
+        android:layout_marginHorizontal="16dp"
+        app:layout_anchorGravity="bottom|end"
+        android:layout_gravity="bottom|end"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
