@@ -165,7 +165,7 @@ public class SettingsActivity extends TahanAppActivity {
         saveNarrationBtn.setOnClickListener((v) -> {
             try {
                 this.settingForcedNarration = forcedNarrationCheckbox.isChecked();
-                this.settingShowPreliminary = forcedNarrationCheckbox.isChecked();
+                this.settingShowPreliminary = showPreliminaryCheckbox.isChecked();
                 SettingsDataManager.putForceNarrations(this, this.settingForcedNarration);
                 SettingsDataManager.putShowPreliminary(this, this.settingShowPreliminary);
                 Toast.makeText(this, getResources().getText(R.string.settings_saved), Toast.LENGTH_SHORT).show();
