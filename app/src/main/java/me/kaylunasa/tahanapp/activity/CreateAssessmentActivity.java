@@ -102,7 +102,7 @@ public class CreateAssessmentActivity extends TahanAppActivity {
             public void handleOnBackPressed() {
                 stopCurrentSound();
 
-                if (getSupportFragmentManager().getBackStackEntryCount() == 0) {
+                if (getSupportFragmentManager().getBackStackEntryCount() == 1) {
                     setEnabled(false);
                     setResult(RESULT_CANCELED);
                     finish();
