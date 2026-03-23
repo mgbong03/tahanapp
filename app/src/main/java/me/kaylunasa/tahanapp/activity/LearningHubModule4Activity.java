@@ -45,12 +45,5 @@ public class LearningHubModule4Activity extends TahanAppActivity {
             if (toolbar.getNavigationIcon() != null)
                 toolbar.getNavigationIcon().setTint(ContextCompat.getColor(this, R.color.black));
         }
-
-        findViewById(R.id.url_autismPh).setOnClickListener((v) -> {
-            String url = getResources().getText(R.string.lhub_m3_s5_d2_url).toString();
-            Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse(url));
-            startActivity(intent);
-        });
     }
 }
