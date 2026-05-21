@@ -102,20 +102,20 @@ public class SettingsActivity extends TahanAppActivity {
                 toolbar.getNavigationIcon().setTint(ContextCompat.getColor(this, R.color.black));
         }
 
-        TextView accountDisplayView = findViewById(R.id.accountDisplay);
-        accountDisplayView.setText(String.format(
-                getResources().getText(R.string.settings_account).toString(),
-                username
-        ));
-
-        Button changePasswordBtn = findViewById(R.id.editPassword);
-        changePasswordBtn.setOnClickListener((v) -> {
-            ChangePasswordFragment passwordFragment = new ChangePasswordFragment();
-            passwordFragment.show(getSupportFragmentManager(), "ChangePasswordFragment");
-        });
-
-        Button logoutBtn = findViewById(R.id.logoutBtn);
-        logoutBtn.setOnClickListener((v) -> logout());
+//        TextView accountDisplayView = findViewById(R.id.accountDisplay);
+//        accountDisplayView.setText(String.format(
+//                getResources().getText(R.string.settings_account).toString(),
+//                username
+//        ));
+//
+//        Button changePasswordBtn = findViewById(R.id.editPassword);
+//        changePasswordBtn.setOnClickListener((v) -> {
+//            ChangePasswordFragment passwordFragment = new ChangePasswordFragment();
+//            passwordFragment.show(getSupportFragmentManager(), "ChangePasswordFragment");
+//        });
+//
+//        Button logoutBtn = findViewById(R.id.logoutBtn);
+//        logoutBtn.setOnClickListener((v) -> logout());
 
         RadioButton defaultRadioBtn = findViewById(R.id.systemDefaultRadioBtn);
         RadioButton englishRadioBtn = findViewById(R.id.englishRadioBtn);
@@ -177,73 +177,73 @@ public class SettingsActivity extends TahanAppActivity {
             }
         });
 
-        Button deleteAccountBtn = findViewById(R.id.deleteAccountBtn);
-        deleteAccountBtn.setOnClickListener((v) -> {
-            AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setTitle(R.string.delete_account)
-                    .setMessage(R.string.delete_account_confirm)
-                    .setPositiveButton("Delete", (v2, e) -> {
-                        AlertDialog.Builder deleteAccountPasswordConfirm = new AlertDialog.Builder(this);
-                        deleteAccountPasswordConfirm.setTitle(getResources().getText(R.string.delete_account))
-                                .setMessage(getResources().getText(R.string.confirm_sign_up_password));
-
-                        final EditText confirmPassInput = new EditText(this);
-                        confirmPassInput.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-
-                        final LinearLayout container = new LinearLayout(this);
-                        container.setOrientation(LinearLayout.VERTICAL);
-
-                        int margin = (int) (20 * getResources().getDisplayMetrics().density);
-                        container.setPadding(margin, 0, margin, 0);
-                        container.addView(confirmPassInput);
-
-                        deleteAccountPasswordConfirm.setView(container);
-
-                        deleteAccountPasswordConfirm.setPositiveButton("OK", (v3, e2) -> {
-                            try {
-                                String username = SessionDataManager.getSessionUsername(this);
-                                if (username == null)
-                                    throw new IllegalStateException();
-                                String confirmPasswordHash = Sha256Kt.sha256(confirmPassInput.getText().toString());
-
-                                if (!UserDataManager.checkUserPassword(this, username, confirmPasswordHash)) {
-                                    Toast.makeText(this, getResources().getText(R.string.passwords_do_not_match), Toast.LENGTH_SHORT).show();
-                                    return;
-                                }
-
-                                UserDataManager.deleteUserData(this, username, confirmPasswordHash);
-                                try {
-                                    SessionDataManager.resetSessionData(this);
-
-                                    Intent intent = new Intent(this, MainActivity.class);
-                                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-                                    startActivity(intent);
-                                }
-                                catch (IOException ex) {
-                                    Toast.makeText(this, "Could not reset stored data.", Toast.LENGTH_SHORT)
-                                            .show();
-                                    System.exit(0);
-                                }
-
-                            }
-                            catch (IllegalStateException | JSONException ex) {
-                                Log.e(TAG, "onCreate: Could not delete account", ex);
-                                Toast.makeText(getApplicationContext(), "Unable to delete account", Toast.LENGTH_SHORT)
-                                        .show();
-                            }
-                        }).setNegativeButton("Cancel", (v3, e2) -> Toast.makeText(
-                                this,
-                                getResources().getText(R.string.delete_account_cancel),
-                                Toast.LENGTH_SHORT
-                        ).show()).show();
-                    })
-                    .setNegativeButton("Cancel", (v2, e) -> Toast.makeText(
-                            this,
-                            getResources().getText(R.string.delete_account_cancel),
-                            Toast.LENGTH_SHORT)
-                    .show())
-                    .show();
-        });
+//        Button deleteAccountBtn = findViewById(R.id.deleteAccountBtn);
+//        deleteAccountBtn.setOnClickListener((v) -> {
+//            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+//            builder.setTitle(R.string.delete_account)
+//                    .setMessage(R.string.delete_account_confirm)
+//                    .setPositiveButton("Delete", (v2, e) -> {
+//                        AlertDialog.Builder deleteAccountPasswordConfirm = new AlertDialog.Builder(this);
+//                        deleteAccountPasswordConfirm.setTitle(getResources().getText(R.string.delete_account))
+//                                .setMessage(getResources().getText(R.string.confirm_sign_up_password));
+//
+//                        final EditText confirmPassInput = new EditText(this);
+//                        confirmPassInput.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+//
+//                        final LinearLayout container = new LinearLayout(this);
+//                        container.setOrientation(LinearLayout.VERTICAL);
+//
+//                        int margin = (int) (20 * getResources().getDisplayMetrics().density);
+//                        container.setPadding(margin, 0, margin, 0);
+//                        container.addView(confirmPassInput);
+//
+//                        deleteAccountPasswordConfirm.setView(container);
+//
+//                        deleteAccountPasswordConfirm.setPositiveButton("OK", (v3, e2) -> {
+//                            try {
+//                                String username = SessionDataManager.getSessionUsername(this);
+//                                if (username == null)
+//                                    throw new IllegalStateException();
+//                                String confirmPasswordHash = Sha256Kt.sha256(confirmPassInput.getText().toString());
+//
+//                                if (!UserDataManager.checkUserPassword(this, username, confirmPasswordHash)) {
+//                                    Toast.makeText(this, getResources().getText(R.string.passwords_do_not_match), Toast.LENGTH_SHORT).show();
+//                                    return;
+//                                }
+//
+//                                UserDataManager.deleteUserData(this, username, confirmPasswordHash);
+//                                try {
+//                                    SessionDataManager.resetSessionData(this);
+//
+//                                    Intent intent = new Intent(this, MainActivity.class);
+//                                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+//                                    startActivity(intent);
+//                                }
+//                                catch (IOException ex) {
+//                                    Toast.makeText(this, "Could not reset stored data.", Toast.LENGTH_SHORT)
+//                                            .show();
+//                                    System.exit(0);
+//                                }
+//
+//                            }
+//                            catch (IllegalStateException | JSONException ex) {
+//                                Log.e(TAG, "onCreate: Could not delete account", ex);
+//                                Toast.makeText(getApplicationContext(), "Unable to delete account", Toast.LENGTH_SHORT)
+//                                        .show();
+//                            }
+//                        }).setNegativeButton("Cancel", (v3, e2) -> Toast.makeText(
+//                                this,
+//                                getResources().getText(R.string.delete_account_cancel),
+//                                Toast.LENGTH_SHORT
+//                        ).show()).show();
+//                    })
+//                    .setNegativeButton("Cancel", (v2, e) -> Toast.makeText(
+//                            this,
+//                            getResources().getText(R.string.delete_account_cancel),
+//                            Toast.LENGTH_SHORT)
+//                    .show())
+//                    .show();
+//        });
 
         getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
             @Override

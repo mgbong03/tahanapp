@@ -50,7 +50,7 @@
                     android:id="@+id/childName"
                     tools:text="Child Name"
                     android:textColor="@color/element_font"
-                    android:fontFamily="@font/fredoka"
+                    android:fontFamily="@font/frutiger_bold"
                     android:layout_marginHorizontal="20dp"
                     android:textAlignment="center"
                     android:textSize="20sp"/>

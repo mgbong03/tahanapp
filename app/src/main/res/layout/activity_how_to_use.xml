@@ -40,7 +40,7 @@
                     android:layout_marginBottom="5dp"
                     android:paddingBottom="4sp"
                     android:paddingRight="4sp"
-                    android:fontFamily="@font/fredoka"
+                    android:fontFamily="@font/frutiger_bold"
                     android:shadowColor="@color/title_shadow"
                     android:shadowDx="3"
                     android:shadowDy="3"

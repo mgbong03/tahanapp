@@ -27,51 +27,51 @@
             android:orientation="vertical"
             android:padding="15dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/layout_bg"
-                android:orientation="vertical"
-                android:padding="15dp"
-                tools:ignore="UselessParent">
-                <TextView
-                    android:id="@+id/accountDisplay"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10sp"
-                    android:fontFamily="@font/frutiger_bold"
-                    android:text="@string/settings_account"
-                    android:textColor="@color/element_font"
-                    android:textSize="18sp" />
-                <Button
-                    android:id="@+id/editPassword"
-                    android:minHeight="40sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/frutiger_bold"
-                    android:textColor="@color/white"
-                    android:backgroundTint="@color/btn_tint"
-                    android:text="@string/edit_password" />
-                <Button
-                    android:id="@+id/logoutBtn"
-                    android:minHeight="40sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/frutiger_bold"
-                    android:textColor="@color/white"
-                    android:backgroundTint="@color/btn_tint"
-                    android:text="@string/log_out" />
-                <Button
-                    android:id="@+id/deleteAccountBtn"
-                    android:minHeight="40sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/frutiger_bold"
-                    android:textColor="@color/white"
-                    android:backgroundTint="@color/element_font_danger"
-                    android:text="@string/delete_account" />
-            </LinearLayout>
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:background="@drawable/layout_bg"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="15dp"-->
+<!--                tools:ignore="UselessParent">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/accountDisplay"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="10sp"-->
+<!--                    android:fontFamily="@font/frutiger_bold"-->
+<!--                    android:text="@string/settings_account"-->
+<!--                    android:textColor="@color/element_font"-->
+<!--                    android:textSize="18sp" />-->
+<!--                <Button-->
+<!--                    android:id="@+id/editPassword"-->
+<!--                    android:minHeight="40sp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/frutiger_bold"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:backgroundTint="@color/btn_tint"-->
+<!--                    android:text="@string/edit_password" />-->
+<!--                <Button-->
+<!--                    android:id="@+id/logoutBtn"-->
+<!--                    android:minHeight="40sp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/frutiger_bold"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:backgroundTint="@color/btn_tint"-->
+<!--                    android:text="@string/log_out" />-->
+<!--                <Button-->
+<!--                    android:id="@+id/deleteAccountBtn"-->
+<!--                    android:minHeight="40sp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/frutiger_bold"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:backgroundTint="@color/element_font_danger"-->
+<!--                    android:text="@string/delete_account" />-->
+<!--            </LinearLayout>-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
